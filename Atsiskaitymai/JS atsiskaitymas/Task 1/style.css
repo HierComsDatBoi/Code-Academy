@@ -53,11 +53,16 @@ form {
 }
 
 /* Outputo stiliai ------------------------------------ */
-#output{
-  > p{
-    text-align: center;
-    font-size: 1.5em;
-  }
+#output {
+  min-width: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 40%;
+  padding: 10px;
+  font-size: 1.5em;
+}
+.white{
+  background-color: #f7f7f7;
 }
 
 /* Tablet */
