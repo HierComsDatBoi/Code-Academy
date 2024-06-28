@@ -27,3 +27,14 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+
+  > div{
+    width: 150px;
+  }
+}
