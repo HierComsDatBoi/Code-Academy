@@ -10,3 +10,10 @@ const audi = {
   year: 2005,
   color: 'white'
 };
+
+const showObjectKeys = (audi) => {return Object.keys(audi);}
+
+// sita uzduotis yra audi
+
+// kas bendro tarp joniniu ir audi?
+// Lauzas yra
