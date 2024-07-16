@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body><div class="form">
+    <h1>Register to Fancy Form</h1>
+    <h4>All fields are <span>required</span> unless marked as "optional"</h4>
+    <form action="submit">
+        <div>
+            <label for="unique">Your unique ID that you can't change<br></label>
+            <input type="text" name="unique" id="unique" placeholder="A84acCDD" readonly>
+        </div>
+
+        <div>
+            <label for="email">Email:<br></label>
+            <input type="text" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="password">Password:<br></label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <div>
+            <label for="age">Age:<br></label>
+            <input type="number" name="age" id="age" min="18" max="65" required>
+        </div>
+
+        <div>
+            <label for="about">Tell us a little about yourself <span>(optional)</span>:<br></label>    
+            <textarea name="about" id="about"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" name="terms" id="terms" required>
+            <label for="terms">I agree with the Terms & Conditions</label>
+        </div>
+
+        <div>
+            <button class="submit-button" id="submit">Register</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

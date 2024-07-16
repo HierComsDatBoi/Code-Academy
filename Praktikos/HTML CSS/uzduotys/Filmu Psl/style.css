@@ -1,0 +1,113 @@
+body{
+    font-size: 14px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{ 
+    margin: 10px; 
+    font-size: 40px;
+    line-height: normal;
+}
+
+aside ul{ color:#fff; }
+
+aside{
+    line-height: 1.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #24282c;
+    color: #ccc;
+    width: 250px;
+    height: 100%;
+}
+
+aside ul{
+    list-style-type: none;
+}
+
+.active, .active li{
+    list-style-type: disc;
+}
+
+.active::marker, .active li::marker{
+    color: red;
+}
+
+.juostele{
+    border-top: 1px solid #111111;
+    border-bottom: 1px solid #353535;
+    margin: 0 auto;
+    width: 80%;
+}
+
+aside a{
+    text-decoration: none;
+    color: #fff;
+}
+
+main{
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.crumbs{
+    text-transform: uppercase;
+}
+
+.fav{
+    color: black;
+    font-weight: bold;
+}
+
+.cat{
+    color: #808080;
+}
+
+.left{
+    float: left;
+    padding-left: 20px;
+}
+
+.left p{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.right{
+    float: right;
+    color: #808080;
+}
+ 
+.right p{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.blue{
+    color: lightskyblue;
+}
+
+.nav-bar {
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .trailers{
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    color: black;
+  }
+
+  .trailers ul{
+    list-style-type: none;
+  }
+
+  .genre{
+    margin-bottom: 30px;
+    color: #808080;
+  }

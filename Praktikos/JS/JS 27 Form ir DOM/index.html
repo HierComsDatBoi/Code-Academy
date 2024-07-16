@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <section>
+        <h2>Pasikartojantys vardai</h2>
+        <form id="names">
+            <div><label for="name">Vardas: </label>
+            <input type="text" name="name" id="name" required>
+            </div>
+
+            <div>
+                <label for="times">Kartai: </label>
+                <input type="number" name="times" id="times" min="0" max="20">
+            </div>
+            <input type="submit" value="Generuoti">
+        </form>
+        <div id="namesOutput"></div>
+    </section>
+
+    <section>
+        <h2>Fizz Buzz</h2>
+        <form id="fizzBuzz">
+        <div>
+            <label for="from">Nuo</label>
+            <input type="number" name="from" id="from" min="0">
+        </div>
+        <div>
+            <label for="to">Iki</label>
+            <input type="number" name="to" id="to" max="1000">
+        </div>
+        <input type="submit" value="Fizz And Buzz">
+    </form>
+    <div id="fizzBuzzOutput"></div>
+    </section>
+
+    <section>
+        <h2>Filmai</h2>
+        <form id="filmas">
+            <div>
+                <label for="name">Pavadinimas:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="thumbnail">Plakatas:</label>
+                <input type="url" name="thumbnail" id="thumbnail">
+            </div>
+            <div>
+                <label for="description">Aprasymas:</label>
+                <input type="textarea" name="description" id="description">
+            </div>
+            <div>
+                <label for="releaseDate">Leidimo data:</label>
+                <input type="date" name="releaseDate" id="releaseDate">
+            </div>
+            <div>
+                <label for="author">Rezisierius</label>
+                <input type="text" name="author" id="author">
+            </div>
+            <div>
+                <label for="imdbScore">IMDB score:</label>
+                <input type="number" step="0.1" name="imdbScore" id="imdbScore">
+            </div>
+            <div>
+                <label for="">Eirino kategorija</label>
+                <input type="radio" name="eirinCategory" value="G" id="G" checked>
+                <label for="G">G</label>
+                <input type="radio" name="eirinCategory" value="PG12" id="PG12">
+                <label for="PG12">PG12</label>
+                <input type="radio" name="eirinCategory" value="R15" id="R15">
+                <label for="R15">R15</label>
+                <input type="radio" name="eirinCategory" value="R18" id="R18">
+                <label for="R18">R18</label>
+            </div>
+            <input type="submit" value="Pateikti filma">
+        </form>
+
+        <div id="filmaiOutput">
+            <div class="card">
+                <h3>Pavadinimas</h3>
+                <div><img src="" alt=""></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis est officia neque eum doloremque eligendi sint vel repudiandae iusto magnam maxime ipsa in cumque, sit incidunt modi dolor itaque voluptates!</p>
+                <div class="extraInfo">
+                    <span>leidimo metai</span>
+                    <span>autorius</span>
+                    <span>imdb score</span>
+                    <span>eirin category</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="uzduotys"> <!-- pirma, antra -->
+        <button>Mygtukas</button>
+    </section>
+    <section id="trecia">
+        <h1>Tuscias</h1>
+        <button>+1</button>
+    </section>
+    <section id="preventCopy">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi!</p>
+    </section>
+    <section id="predator">
+        <h1 class="nejudek">DON'T MOVE!</h1>
+    </section>
+</body>
+</html>

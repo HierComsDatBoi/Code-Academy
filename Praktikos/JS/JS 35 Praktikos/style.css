@@ -1,0 +1,31 @@
+#games{
+    > div
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 50px;
+
+        > .gameCard{
+            width: 350px;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+
+            >h3{
+                margin-top: 0;
+                text-align: center;
+            }
+            >p{
+                text-align: justify
+            }
+            > img{
+                width: 100%;
+            }
+        }
+}
+}
+body:has(dialog[open]){
+    overflow: hidden;
+}

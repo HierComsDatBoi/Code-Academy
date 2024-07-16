@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display grid</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Grid</h1>
+        <h2>Teorija</h2>
+        <section id="gridTeorija"><!-- teorija -->
+            
+            <div>
+                <h3>Parent (container)</h3>
+                <ul>
+                    <li>display: grid;</li>
+                    <li>grid-template-rows: % px fr;</li>
+                    <li>grid-template-columns: px px px px;</li>
+                    <li>grid-template-areas: rows ir columns pavadinimai</li>
+                    <li>grid-tempate: rows / columns</li>
+                    <li>gap: row column;</li>
+                    <li>justify-items: start|end|center|stretch|baseline;</li>
+                    <li>align-items: start|end|center|stretch|baseline;</li>
+                    <li>place-items: align justify;</li>
+                    <li>grid-auto-columns: ;</li>
+                    <li>grid-auto-rows: ;</li>
+                    <li>grid-auto-flow: ;</li>
+                    <li>grid: labiau komplikuota nei reikia :D</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Children (items)</h3>
+                <ul>
+                    <li>grid-row-start|end: ;</li>
+                    <li>grid-column-start|end: ;</li>
+                    <li>grid-area: ;</li>
+                    <li>place-self: </li>
+                    <li>align-self: ;</li>
+                    <li>justify-self: ;</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Units & Functions</h3>
+                <ul>
+                    <li>fr</li>
+                    <li>min-content</li>
+                    <li>max-content</li>
+                    <li>auto</li>
+                    <li>fit-content()</li>
+                    <li>minmax(min, max)</li>
+                    <li>repeat(kiek, koki(us)) === kiek * kokius kokius kokius</li>
+                    <li>masonry</li>
+                    <li>subgrid</li>
+                </ul>
+            </div>
+        </section>
+
+        <section> <!-- pavyzdys -->
+            <h2>Grid Pavyzdys</h2>
+            <div class="gridContainer">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+        </section>
+        <section><!-- kortele -->
+            <h2>korteles</h2>
+            <div class="card1">
+                <h3>Knyga</h3>
+                <img src="https://dictionary.cambridge.org/images/thumb/book_noun_001_01679.jpg?version=6.0.11" alt="book">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis error eos voluptatum sunt minima temporibus numquam maxime culpa quam ipsam vitae sapiente, perferendis minus molestias illum voluptatibus, doloribus modi quos. Neque quasi porro ratione inventore magnam facilis vel sapiente. Sapiente suscipit dolore reiciendis nesciunt nulla hic assumenda vel magni!</p>
+                <span>Autorius</span>
+                <span>Leidimo metai</span>
+                <span>Zanras</span>
+                <span>Reitingas</span>
+                <a href="#">More info</a>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

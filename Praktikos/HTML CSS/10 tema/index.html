@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1>Responsive design</h1>
+            <p>Elementu isdestymas skirtingiems ekranu dydziams</p>
+            <h3>Breakpoints</h3>
+            <p>Breakpoint - ekrano luzio dydis, kuri naudojant keisis elementu isdestymas</p>
+            <ol>
+                <li>X-Small		< 576px </li>
+                <li>Small	≥ 576px
+                <li>Medium	≥ 768px</li>
+                <li>Large	≥ 992px</li>
+                <li>Extra large	≥ 1200px</li>
+                <li>Extra extra large	≥ 1400px</li>
+            </ol>
+            <p>Query aprasymas - @media (min-width: px){...css...}<br>
+            pradzioj css apsiraso pastovus stiliai, veliau apacioje aprasomi dydziai kurie pasikeis. <br>
+            nuo maziausio iki didziausio
+            </p>
+            <p>@media nesuteikia papildomo prioritete, todel reikia teisingo eiliskumo.<br>
+            media stiliai nepradingsta pasiekus nauja media query</p>
+            
+        </section>
+        <section><!-- mobile -->
+            <h2>Mobile first</h2>
+            <p>
+                dizaino principas toks, kad pradzioje puslapis pritaikomas telefonams, tada judama prie didesniu dydziu<br>
+                Taip daroma, kad didesnis kiekis naudojasi telefonu, maziau vietos atvaizduoti informacija, tai leidzia atsirinkti svarbesne info<br>
+                Lengviau yra prideti turini, nei ji pasalinti.
+            </p>
+            <p>Rasant mobile first reikia naudoti min-width</p>
+            <ol>
+                <li>Daugiau vartotoju naudojasi telefonais</li>
+                <li>Atsirenkami svarbesni elemenentai, kai maziau vietos</li>
+            </ol>
+        </section>
+
+         <section class="task2"> <!-- praktika -->
+            <div class="header2">header</div>
+            <div class="main2">main</div>
+            <div class="widget2">widget</div>
+            <div class="footer2">footer</div>
+         </section>
+
+         <section class="antonioGaudi">
+            <div class="header4"></div>
+            <div class="main4">
+                <div class="cardsContainer4">
+                    <article>
+                        <h3>Antonio Gaudi 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde quo eos iste modi error quae, similique deleniti illo cum.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam porro maxime, minima tempore fugiat dignissimos mollitia delectus ex reprehenderit. Error.</p>
+                        <img src="./media/antonioGaudi.png" alt="">
+                    </article>
+                    <article>
+                        <h3>Antonio Gaudi 2</h3>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde quo eos iste modi error quae, similique deleniti illo cum.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam porro maxime, minima tempore fugiat dignissimos mollitia delectus ex reprehenderit. Error.</p>
+                    </article>
+                    <article>
+                        <h3>Antonio Gaudi 3</h3>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde quo eos iste modi error quae, similique deleniti illo cum.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam porro maxime, minima tempore fugiat dignissimos mollitia delectus ex reprehenderit. Error.</p>
+                    </article>
+                    <article>
+                        <h3>Antonio Gaudi 4</h3>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde quo eos iste modi error quae, similique deleniti illo cum.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam porro maxime, minima tempore fugiat dignissimos mollitia delectus ex reprehenderit. Error.</p>
+                    </article>
+                </div>
+                
+            </div>
+            <div class="hero4"></div>
+            <div class="footer4"></div>
+         </section>
+    </main>
+    
+</body>
+</html>

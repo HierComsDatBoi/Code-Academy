@@ -1,0 +1,117 @@
+/* body{
+    background-color: aquamarine;
+} */
+
+/* tablet media */
+/* @media (min-width: 768px){
+    body{
+        background-color: burlywood;
+    }
+}
+
+@media (min-width: 1024px){
+    body{
+        background-color: bisque;
+    }
+} */
+
+/* task2 */
+section.task2{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 6fr 3fr 1fr;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    gap: 5px;
+
+    > .header2{
+        background-color: lightblue;
+    }
+    > .main2{
+        background-color: lightgreen;
+    }
+    > .widget2{
+        background-color: violet;
+    }
+    > .footer2{
+        background-color: darkblue;
+    }
+}
+
+
+@media (min-width:600px) {
+    section.task2{
+        grid-template-columns: 1fr 2fr;
+    
+        > .header2{
+            grid-area: 1 / 1 / -1 / 2;
+        }
+        > .main2{
+            grid-area: 1 / 2 / 3 / 3;
+        }
+    }
+}
+
+@media (min-width:1000px) {
+    section.task2{
+        grid-template-columns: 1fr 2fr 1fr;
+    
+        > .header2{
+            grid-area: 1 / 1 / -1 / 2;
+        }
+        > .main2{
+            grid-area: 1 / 2 / 4 / 3;
+        }
+        > .widget2{
+            grid-area: 1 / 3 / -1 / 4;
+        }
+    }
+}
+
+/* task4 */
+section.antonioGaudi{
+
+    > .main4{
+
+        .cardsContainer4{
+
+            > article{
+                display: grid;
+                grid-template-columns: 4fr 3fr;
+                grid-template-rows: 1fr 2fr 2fr;
+
+                > img{
+                    grid-area: 1 / 2 / 4 / 3;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px){
+    section.antonioGaudi{
+
+        > .main4{
+    
+            .cardsContainer4{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+
+                > article{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: unset;
+    
+                    > img{
+                        grid-area: 1/1/2/2;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

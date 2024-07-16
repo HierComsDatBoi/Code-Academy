@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./main.js" defer></script>
+</head>
+<body>
+    <section>
+        <h2>Skaiciuotuvas</h2>
+        <div class="calculator">
+            <div id="calcOutput"></div>
+            <div class="calcGrid">
+                <div data-sign>+/-</div>
+                <div data-delVisual>CE</div>
+                <div data-delAll>C</div>
+                <div data-delLast>Del</div>
+                <div data-action="power">^</div>
+                <div data-action="root">√</div>
+                <div data-action="modulus">%</div>
+                <div data-action="division">/</div>
+                <div data-number="7">7</div>
+                <div data-number="8">8</div>
+                <div data-number="9">9</div>
+                <div data-action="multiply">*</div>
+                <div data-number="num4ber">4</div>
+                <div data-number="5">5</div>
+                <div data-number="6">6</div>
+                <div data-action="subtract">-</div>
+                <div data-number="1">1</div>
+                <div data-number="2">2</div>
+                <div data-number="3">3</div>
+                <div data-action="sum">+</div>
+                <div data-number="number">0</div>
+                <div data-action=".">.</div>
+                <div data-calculate="">=</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lentele">
+        <form action="submit">
+            <label for="x">Stulpeliu skaicius:</label>
+            <input type="number" name="x" id="x">
+            <label for="y">Eiluciu skaicius:</label>
+            <input type="number" name="y" id="y">
+            <input type="submit" value="Pateikti" name="submit" id="submit">
+        </form>
+    </section>
+
+    <section id="optionRemove">
+    <form action="submit">
+        <select name="removePlease" id="removePlease">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <input type="submit">
+    </form>
+</section>
+</body>
+</html>

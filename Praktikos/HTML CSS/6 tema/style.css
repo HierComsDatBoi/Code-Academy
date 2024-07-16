@@ -1,0 +1,64 @@
+input:checked + label{
+    background-color: aquamarine;
+}
+
+input[type='checkbox']{
+    display: none;
+}
+
+input:checked{
+    font-size: 50px;
+}
+
+:default{
+    background-color: bisque;
+}
+:focus{
+    font-size: 30px;
+}
+
+:in-range{
+    background-color: green;
+}
+
+:out-of-range{
+    background-color: red;
+}
+
+input[type="email"]:valid{
+    background-color: blueviolet;
+}
+input[type="email"]:invalid{
+    background-color: rgb(55, 43, 226);
+}
+
+li::before{
+    content: "xD ";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+:nth-child(2n)::marker{
+    color: orange;
+}
+
+li::selection{
+    color: rgb(0, 255, 13);
+    background-color: black;
+}
+
+::first-letter{
+    font-size: 50px;
+}
+
+::-webkit-scrollbar{
+ background-color: purple;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: brown;
+}

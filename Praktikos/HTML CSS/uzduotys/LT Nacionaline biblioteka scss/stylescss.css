@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background-color: #ccc;
+}
+
+footer {
+  text-align: center;
+}
+
+#logo img {
+  width: 100px;
+}
+#logo img > a {
+  display: block;
+}
+
+header {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 3px #000;
+  margin-bottom: 20px;
+}
+header > nav a {
+  padding: 5px 0;
+  display: block;
+}
+
+.lentyna {
+  background-color: #fff;
+  box-shadow: 0 0 3px #000;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 30px;
+}
+
+th, td {
+  border-bottom: 1px solid grey;
+  text-align: start;
+}
+
+.wrapper {
+  margin: 10px;
+}
+
+@media (min-width: 500px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header > nav {
+    display: flex;
+    padding: 10px;
+  }
+  header > nav > a {
+    padding-right: 20px;
+  }
+}/*# sourceMappingURL=stylescss.css.map */

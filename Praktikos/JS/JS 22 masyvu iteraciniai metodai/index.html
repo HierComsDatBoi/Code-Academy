@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <section><!-- object -->
+        <h2>Object</h2>
+        <ul>
+            <li>.entries(obj) - grazina masyvus masyve su raktais ir reiksmem</li>
+            <li>.keys(obj) - grazina masyva su raktais kaip stringais</li>
+        </ul>
+        <h2>neiteraciniai</h2>
+        <ul>
+            <li>.isArray(el) - ar elementas yra masyvas t/f</li>
+            <li>.from(value) - suskaido value i masyva</li>
+            <li>of(val1, val2, val3....) - sudeda values i masyva</li>
+        </ul>
+        <ul>
+            <li>.prototype.at(i) - grazia tame indexe esancia reiksme</li>
+            <li>.prototype.concat(val1, val2, val3) - sujungia reiksmes i masyva</li>
+            <li>.prototype.fill(value, start, end)- uzpildo masyva reiksmemis nuo nurodytos pozicijos iki pozicijos. MODIFIKUOJA originalu masyva</li>
+            <li>.prototype.includes(value) - ar masyve yra value</li>
+            <li>.prototype.indexOf(value, fromindex)</li>
+            <li>.prototype.lastIndexOf(value, fromindex)</li>
+            <li>.prototype.join(seperator)</li>
+            <li>.prototype.pop() - isima is galo</li>
+            <li>.prototype.push() - ideda</li>
+            <li>.prototype.shift() - </li>
+            <li>.prototype.unshift() - </li>
+            <li>.prototype.reverse() - modifikuoja originalu</li>
+            <li>.prototype.toReversed - nemodifikuoja, grazina apsukta</li>
+            <li>.prototype.slice(from, to) - nemodifikuoja, nukopijuoja i nauja masyva</li>
+            <li>.prototype.sort(compareFn) - rikiuoja ir modifikuoja</li>
+            <li>.prototype.toSorted(compareFn) - rikiuoja ir nemodifikuoja</li>
+            <li>.prototype.splice(start, deletionCount, value) - value ka istatyti i istrinta vieta, grazina masyva su istrintomis reiksmemis</li>
+            <li>.prototype.toSplice() - grazina redaguota masyva</li>
+            <li>.prototype.with(index, value) - grazina nauj masyva kuriame nurodytame indekse esanti reiksme pakeista i nurodyta reiksme</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Salygos (advanced)</h2>
+        <h3>Ternary</h3>
+        <p>
+            ternary panasus i paprasta if, kuris turi if, tik yra naudojama kitokia sintakse.
+            Ternary yra daznai naudojama one-lineuose.
+        </p>
+        <p>
+            syntax: salyga ? tiesosAtvejoKodas : meloAtvejoKodas <!-- skaiciuotuvas2 -->
+        </p>
+        <h3>Logical AND</h3>
+        <p>
+            panasu i ternary tik nera else atveju,
+            iesko melo ir jeigu yra tiesa daro kita puse
+        </p>
+        <p>
+            Syntax: salyga && tiesosAtvejoKodas;
+        </p>
+    </section>
+</body>
+</html>

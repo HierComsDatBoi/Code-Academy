@@ -1,0 +1,76 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main > section{
+    padding: 30px 20vw;
+}
+header, footer{
+
+
+    padding: 0 20vw;
+}
+
+#hero{
+    background-image: url(https://samuelearp.com/wp-content/uploads/2019/09/MountainValley-SamuelEarp-oilpainting.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    color: white;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff1e;
+    }
+        
+    > div{
+        position: relative;
+        width: 40vw;
+        
+    }
+}
+
+ .about{
+    background-color: #fafafa;
+    text-align: center;
+    > .cards{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        
+
+        >div{
+        background-color: #fff;
+        box-shadow: 0 0 3px 1px lightgrey;
+        }
+    }
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 500px;
+    
+    >.bannerPhotos{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+
+
+        > div{
+            height: 50px;
+            width: 80px;
+            background-color: aquamarine;
+        }
+    }
+}

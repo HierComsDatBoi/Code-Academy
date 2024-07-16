@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>23 paskaita - Masyvų iteraciniai metodai ir destr</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Masyvų iteraciniai metodai -->
+      <h1>Masyvų iteraciniai metodai</h1>
+      <p>
+        Masyvų iteraciniai metodai yra tokie metodai, kurie suka ciklą per masyvą, ima kiekvieną jo elementą (kurį galima užsivadinti kaip nori) ir su juo kiekvienos iteracijos metu atlieka kažkokius veiksmus | sąlygas | kažką grąžina.
+      </p>
+      <div> <!-- forEach -->
+        <h2>ForEach</h2>
+        <p>
+          masyvas.forEach((element)=>{ ... veiksmai ... });
+          masyvas.forEach((element, index)=>{ ... veiksmai ... });
+          masyvas.forEach((element, index, array)=>{ ... veiksmai ... });
+        </p>
+        <p>
+          ForEach metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu TIKTAI atlieka kažkokius veiksmus su elementu.<br>
+          ForEach negali grąžinti kažkokios reikšmės, neturi return.<br>
+          ForEach negali būti sustabdytas, neturi break.
+        </p>
+      </div>
+      <div> <!-- filter -->
+        <h2>Filter</h2>
+        <p>
+          masyvas.filter((element)=>{ ... veiksmai sąlyga+return ... });
+          masyvas.filter((element, index)=>{ ... veiksmai sąlyga+return ... });
+          masyvas.filter((element, index, array)=>{ ... veiksmai sąlyga+return ... });
+        </p>
+        <p>
+          Filter metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu gali atlikti kažkokius veiksmus ir tuomet iteracijos elementą praleisti pro filtrą jeigu kažkokia sąlyga yra tenkinama. Kitaip pasakius, išfiltruoja masyvą ir grąžina naują masyvą su atrinktomis reikšmėmis.
+        </p>
+      </div>
+      <div> <!-- map -->
+        <h2>Map</h2>
+        <p>
+          masyvas.map((element)=>{ ... veiksmai sąlyga return ... });
+          masyvas.map((element, index)=>{ ... veiksmai sąlyga return ... });
+          masyvas.map((element, index, array)=>{ ... veiksmai sąlyga return ... });
+        </p>
+        <p>
+          Map metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu gali atlikti kažkokius veiksmus, gali pagal kažkokią sąlygą grąžinti arba grąžina kažkaip mutuotą/pakeistą/redaguotą elementą. Kitaip pasakius, gaunamas vienoks masyvas, grąžinamas kitoks masyvas.
+        </p>
+      </div>
+      <div> <!-- reduce -->
+        <h2>Reduce</h2>
+        <p>
+          masyvas.reduce((accumulator, currentElement) => { ... veiksmai ?salyga? return ...});
+          masyvas.reduce((accumulator, currentElement, index) => { ... veiksmai ?salyga? return ...});
+          masyvas.reduce((accumulator, currentElement, index, array) => { ... veiksmai ?salyga? return ...});
+          masyvas.reduce((accumulator, currentElement) => { ... veiksmai ?salyga? return ...}, initialValue);
+          masyvas.reduce((accumulator, currentElement, index) => { ... veiksmai ?salyga? return ...}, initialValue);
+          masyvas.reduce((accumulator, currentElement, index, array) => { ... veiksmai ?salyga? return ...}, initialValue);
+        </p>
+        <p>
+          Reduce metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu keičia accumulator'ių naudodamas currentElement'o reikšmę ir grąžina pakeistą accumulator'ių kitai iteracijai. Viso metodo gale grąžinama viena reikšmė - accumulator.<br>
+          Jeigu NĖRA nurodytas initialvalue - pirmosios iteracijos metu, accumulator yra 0'tasis elementas, o currentElement yra 1'asis elementas.<br>
+          Jeigu YRA nurodytas initialValue - pirmosios iteracijos metu, accumulator yra initialValue, o currentElement yra 0'tasis elementas.
+        </p>
+      </div>
+      <div> <!-- reduceRight -->
+        <h2>ReduceRight</h2>
+        <p>Tas pats kas reduce, tik iš kito galo.</p>
+      </div>
+      <div> <!-- flatMap -->
+        <h2>FlatMap</h2>
+        <p>Junginys flat(1) ir map metodų.</p>
+      </div>
+      <div> <!-- Some ir Every -->
+        <h2>Some ir Every</h2>
+        <p>
+          masyvas.some|every((element)=>{ ... veiksmai sąlyga return ... });
+          masyvas.some|every((element, index)=>{ ... veiksmai sąlyga return ... });
+          masyvas.some|every((element, index, array)=>{ ... veiksmai sąlyga return ... });
+        </p>
+        <p>
+          Some metodas - suka ciklą per visą masyva ir kiekvienos iteracijos metu tikrina ar elementas atitinka sąlygą. Jeigu bent vienas masyvo elementas sąlygą atitinka, metodas iš karto grąžina true. Jeigu visi masyvo elementai sąlygos neatitinka, metodas grąžina false.
+        </p>
+        <p>
+          Every metodas - suka ciklą per visą masyva ir kiekvienos iteracijos metu tikrina ar elementas atitinka sąlygą. Jeigu bent vienas masyvo elementas sąlygos neatitinka, metodas iš karto grąžina false. Jeigu visi masyvo elementai sąlygą atitinka, metodas grąžina true.
+        </p>
+      </div>
+      <div> <!-- Find, FindIndex, FindLast, FindLastIndex -->
+        <h2>Find, FindIndex, FindLast, FindLastIndex</h2>
+        <p>
+          masyvas.find...((element)=>{ ... veiksmai sąlyga return ... });
+          masyvas.find...((element, index)=>{ ... veiksmai sąlyga return ... });
+          masyvas.find...((element, index, array)=>{ ... veiksmai sąlyga return ... });
+        </p>
+        <p>
+          Find - grąžina pirmą rastą elementą, kuris atitinka nurodytą sąlygą.
+        </p>
+        <p>
+          FindIndex - grąžina pirmo rasto elemento indeksą (vietą masyve), kuris atitinka nurodytą sąlygą.
+        </p>
+        <p>
+          FindLast - tas pats kas Find, tik iš kito galo.
+        </p>
+        <p>
+          FindLastIndex - tas pats kas FindIndex, tik iš kito galo.
+        </p>
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+  </main>
+  <footer></footer>
+</body>
+</html>

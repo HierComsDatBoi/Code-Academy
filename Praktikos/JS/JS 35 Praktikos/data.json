@@ -1,0 +1,45 @@
+{
+  "videoGames": [
+    {
+      "id": "1",
+      "name": "Helldivers 2",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/e/e7/Helldivers2cover.png",
+      "description": "Helldivers 2 is a 2024 cooperative third-person shooter game developed by Arrowhead Game Studios and published by Sony Interactive Entertainment.",
+      "releaseDate": "2024-02-08",
+      "developer": "Arrowhead Game Studios",
+      "platform": "PC",
+      "genres": [
+        "Third-Person",
+        "Shooter",
+        "Co-Op"
+      ],
+      "checked": true
+    },
+    {
+      "id": "2",
+      "name": "Red Dead Redemption 2",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Red_Dead_Redemption_II.jpg/220px-Red_Dead_Redemption_II.jpg",
+      "description": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games.",
+      "releaseDate": "2019-11-05",
+      "developer": "Rockstar Games",
+      "platform": "PC",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Shooter"
+      ]
+    },
+    {
+      "id": "1718611524251",
+      "name": "V Rising",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/V_Rising_cover_art.jpg/220px-V_Rising_cover_art.jpg",
+      "description": "V Rising is an 2024 action role-playing survival game developed by Stunlock Studios and published by Level Infinite. It was first released in early access for Windows in May 2022 before officially releasing two years later, with a PlayStation 5 version under development. Within a week, it had surpassed one million sales.",
+      "releaseDate": "2024-05-08",
+      "developer": "Stunlock Studios",
+      "platform": "PC",
+      "genres": [
+        "Survival"
+      ]
+    }
+  ]
+}

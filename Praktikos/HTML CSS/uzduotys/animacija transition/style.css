@@ -1,0 +1,96 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.button{
+    margin:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 5px dashed black;
+}
+button{
+    height: 100px;
+    width: 200px;
+    background-color: #1a57ff;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(73, 73, 73, 0.452) inset;
+
+    transition: 0.2s 0s cubic-bezier(0.32,-1.34, 0.51, 1.89);
+}
+
+button:hover{
+    transform: scale(1.3);
+    background-color: yellowgreen;
+}
+
+.float{
+    height: 100px;
+    width: 100vw;
+    margin:50px;
+    border-bottom: 5px dashed black;
+
+}
+
+.floatingElement{
+    width: 100px;
+    height: 50px;
+    background-color: darkgreen;
+    border-radius: 30px;
+    color: beige;
+    font-weight: 700;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: floater;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floater{
+    0%{ transform: rotate(0deg); }
+    50%{ transform: translateX(300px) rotate(180deg); }
+    100%{ transform: rotate(359deg); }
+}
+
+.jelly{
+    height: 200px;
+    width: 100vw;
+    margin:50px;
+    border-bottom: 5px dashed black;
+
+}
+
+.sqare{
+    width: 100px;
+    height: 150px;
+    background-color: rgb(252, 255, 89);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 20px;
+    border: 1px solid orange;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: jello;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+@keyframes jello{
+0%{ transform: skew(5deg, 0) scale(1) ; }
+10%{ transform: skew(0deg, 0) scaley(0.9) ; }
+50%{ transform: skew(-5deg, 0) scale(1); }
+60%{ transform: skew(0deg, 0) scaley(0.9) ; }
+100%{ transform: skew(5deg, 0) scale(1); }
+}

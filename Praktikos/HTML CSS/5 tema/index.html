@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 paskaita</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section> <!-- table -->
+            <h2>Table</h2>
+            <ul>
+                <li>table</li>
+                <li>thead</li>
+                <li>tbody</li>
+                <li>tfoot - dazniausiai lenteles isvestines</li>
+                <li>tr - table row</li>
+                <li>td - table data</li>
+                <li>th - stulpelio pavadinimas</li>
+                <li>colspan - praplecia eilute</li>
+                <li>rowspan - praplecia stulpeli</li>
+                <li>colgroup</li>
+                <li>col - stulpeliu skirstymas</li>
+                <li>caption - lenteles pavadinimas</li>
+            </ul>
+        <div> <!-- lenteles pavyzdys -->
+            <h3>Pavyzdys</h3>
+            <table>
+                <caption>Pavyzdys</caption>
+                <thead>
+                    <tr>
+                        <th>Eil. Nr</th>
+                        <th>Vardas</th>
+                        <th>Metai</th>
+                        <th>Menesis</th>
+                        <th>Diena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Dainius</td>
+                        <td>1994</td>
+                        <td>12</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Gedas</td>
+                        <td>1992</td>
+                        <td>02</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Gintare</td>
+                        <td>1993</td>
+                        <td>03</td>
+                        <td>02</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th colspan="3">Vyriausias</th>
+                    <th colspan="2">Gedas</th>
+                </tfoot>
+            </table>
+        </div>
+        </section>
+
+        <section><!-- attribute selectors -->
+            <h2>Attribute selectors</h2>
+            <ul>
+                <li>[attribute] - atributo vardas</li>
+                <li>[attribute="reiksme"] - atributo tiksli reiksme</li>
+                <li>[attribute~="reiksme"] - reiksmes zodis, pvz flower class="big red flower"</li>
+                <li>[attribute*="reiksme"] - reiksmes simboliu seka, pvz parinks "wer" class="big red flower"</li>
+                <li>[attribute^="reiksme"] - reiksme prasidedanti nurodyta seka</li>
+                <li>[attribute$="reiksme" - reiksme pasibaigianti nurodyta seka</li>
+                <li>[attribute|="reiksme"] -atributo vardas ir reiksme su '-'</li>
+            </ul>
+        </section>
+
+        <section> <!-- pseudo class -->
+            <h2>Pseudo class</h2>
+            <ul>
+                <li>Nuorodu selektoriai
+                    <ol>
+                        <li>:link</li>
+                        <li>:visited</li>
+                        <li>:hover</li>
+                        <li>:active</li>
+                    </ol>
+                </li>
+                <li>:first-child - paskutinis vaikinis elementas</li>
+                <li>:last-child</li>
+                <li>:only-child</li>
+                <li>:first-of-type</li>
+                <li>:last-of-type</li>
+                <li>:only-of-type</li>
+                <li>:nth-child(n) - sarasuose pasirinkti n taji elementa</li>
+                <li>:nth-last-child(n)</li>
+                <li>:nth-of-type(n)</li>
+                <li>:nth-last-of-type(n)</li>
+                <li>useless</li>
+                <ul>
+                <li>:empty - tagas be turinio</li>
+                <li>:fullscreen - pakeitimus daro tik fullscreen rezime</li>
+                <li>:lang - kalbos atributo selektorius</li>
+                <li>:not(selector) - parenka viska bet nenurodyta selektoriu</li>
+                <li>:root - kreipiasi i root svetaines nustatymus (naudojama css kintamiesiems)</li>
+                <li>:target - kreipiamasi i elementa i kuri nusinaviguoji su nuoroda</li>
+            </ul>
+            </ul>
+            <div class="selectorTest">
+                <h3>Pavyzdziai</h3>
+                <a href="https://google.com">Nuoroda</a>
+            </div>
+        </section>
+
+        <section><!-- icons -->
+            <h2>icons</h2>
+            <p>iconos importuojamos is puslapio</p>
+            <p>neturi savo tago todel naudojami i arba span</p>
+            <i class="bi bi-airplane-engines"></i>
+            <span class="bi bi-airplane-engines"></span>
+        </section>
+
+        <section><!-- iframe -->
+        <h2>iframe</h2>
+        
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

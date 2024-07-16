@@ -1,0 +1,158 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css);
+
+:root{
+    --primary-color: #645cff;
+    --bg-color: #f8fafc;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+i, a, span, .socials, .icon{
+    color: var(--primary-color);
+    font-style: normal;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding: 0;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+p, a{
+    font-size: 0.8rem;
+}
+
+.center{
+    text-align: center;
+}
+
+
+header{
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .logo{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    > .socials > .icon{
+        display: inline;
+        padding-right: 10px;
+    }
+    
+}
+
+#hero{
+    background-color: var(--primary-color);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    > .heroDiv{
+        text-align: center;
+        padding: 0 2rem;
+    }
+}
+
+.aboutContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 40px;
+
+    > .aboutImg{
+        > img{
+        max-width: 100%;
+        }
+    }
+    > .aboutText > h3{
+        letter-spacing: 0.1rem;
+    }
+}
+
+#services{
+    background-color: var(--bg-color);
+    height: 80vh;
+    > h2 {
+        padding-top: 30px;
+    }
+    > .cardContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-content: center;
+        align-items: center;
+        height: 60vh;
+        gap: 20px;
+
+        > .card{
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+#featured{
+    width: 90vw;
+    margin: 0 auto;
+
+    .tour{
+        margin-bottom: 50px;
+        position: relative;
+        box-shadow: 0 0px 3px lightgray;
+        
+        > .tourDate{
+            font-weight: bold;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            padding: 5px;
+            z-index: 1;
+            display: inline;
+            background-color: var(--primary-color);
+        }
+        > img{
+            width: 100%;
+        }
+        > h4{
+            padding-left: 20px;
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+    }
+}
+
+#gallery{
+    background-color: var(--bg-color);
+    width: 100vw;
+    margin: 0 auto;
+    object-fit: contain;
+
+    .galleryGrid{
+        display: grid;
+        grid-template-rows: 1fr repeat(5, 3fr) 2fr;
+        width: 100vw;
+
+        .galleryImg{
+            max-width: 100%; object-fit: contain;
+        }
+    }
+}

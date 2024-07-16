@@ -1,0 +1,37 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+.logo{
+    height: 100px;
+}
+
+header{
+    text-align: center;
+}
+
+nav{
+    background-color: green;
+    padding: 10px 0;
+}
+
+nav a{
+    color:#fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+section{
+    background-color: #ccc;
+    padding: 20px
+}
+section img{
+    width: 100%;
+}
+
+h2{
+    color: #fff;
+    background-color: green;
+    padding: 10px;
+}
+
+section.contact{
+    background-color: lightgreen;
+}

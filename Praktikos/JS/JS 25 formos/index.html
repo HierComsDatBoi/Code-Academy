@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <section>
+        <h2>form tagai ir atributai</h2>
+        <div class="twoLists">
+            <div>
+                <h3>Tags</h3>
+                <ul>
+                    <li>form</li>
+                    <li>input</li>
+                    <li>label</li>
+                    <li>select</li>
+                    <li>datalist</li>
+                    <li>option</li>
+                    <li>label</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Atributes</h3>
+                <ul>
+                    <li>type:</li>
+                    <ul>
+                        <li>text</li>
+                        <li>password</li>
+                        <li>number</li>
+                        <li>email</li>
+                        <li>url</li>
+                        <li>radio</li>
+                        <li>checkbox</li>
+                        <li>submit</li>
+                        <li>date</li>
+                        <li>datetime-local</li>
+                        <li>...</li>
+                    </ul>
+                    <li>for</li>
+                    <li>id</li>
+                    <li>name</li>
+                    <li>value</li>
+                    <li>placeholder</li>
+                    <li>required</li>
+                    <li>checked</li>
+                    <li>selected</li>
+                    <li>disabled</li>
+                    <li>min</li>
+                    <li>max</li>
+                    <li>step</li>
+                    <li>...</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Test Form</h2>
+        <form id="testForm">
+            <div>
+                <label for="userName">Vardas: </label>
+                <input type="text" id="userName" name="userName">
+            </div>
+            <div>
+                <label for="userPhoto">Nuotrauka: </label>
+                <input type="url" id="userPhoto" name="userPhoto">
+            </div>
+            <div>
+                <label for="userDOB">Gimimo data</label>
+                <input type="datetime-local" id="userDOB" name="userDOB">
+            </div>
+            <div>
+                <label for="userAge">Amzius</label>
+                <input type="number" id="userAge" name="userAge">
+            </div>
+            
+            <div>
+                <label for="userSex">Lytis</label>
+                <input type="radio" id="male" name="userSex" value="male">
+                <label for="male">Vyras</label>
+                <input type="radio" id="female" name="userSex" value="female">
+                <label for="female">Moteris</label>
+                <input type="radio" id="undefined" name="userSex" value="undefined">
+                <label for="undefined">Nenurodyti</label>
+            </div>
+            <div>
+                <label for="">Kokiu firmu batus nesiojate: </label>
+                <input type="checkbox" id="adidas" name="userBoots" value="adidas">
+                <label for="adidas">Adidas</label>
+                <input type="checkbox" id="nike" name="userBoots" value="nike">
+                <label for="nike">Nike</label>
+                <input type="checkbox" id="puma" name="userBoots" value="puma">
+                <label for="puma">Puma</label>
+                <input type="checkbox" id="converse" name="userBoots" value="converse">
+                <label for="">Converse</label>
+            </div>
+            <div>
+                <label for="userMusicTaste">Megstamiausias muzikos zanras: </label>
+                <select name="userMusicTaste" id="userMusicTaste">
+                    <option value="country">Country</option>
+                    <option value="pop">Popsikas</option>
+                    <option value="rock">Rock</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="metal">Metal</option>
+                    <option value="phonk">Phonk</option>
+                    <option value="classic">Classic</option>
+                </select>
+            </div>
+            <input type="submit" value="Pateikti Forma">
+        </form>
+    </section>
+    <section>
+        <h2>Sudetis</h2>
+        <form id="sudetis">
+            <input type="number" name="sk1" id="">
+            <input type="number" name="sk2" id="">
+            <input type="submit" value="=">
+        </form>
+    </section>
+    <section>
+        <h2>Skaiciuotuvas</h2>
+        <form id="skaiciuotuvas">
+        <input type="number" name="skaicius1" placeholder="Pirmas skaicius">
+        <select name="veiksmas" id="veiksmas">
+        <option value="+">Sudetis</option>
+        <option value="-">Atimtis</option>
+        <option value="*">Daugyba</option>
+        <option value="/">Dalyba</option>
+    </select>
+        <input type="number" name="skaicius2" placeholder="Antras skaicius">
+        <input type="submit" value="=">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 paskaita</title>
+</head>
+
+    <body>
+        <h1>Box model</h1>
+        <header></header>
+        <main>
+            <section><!-- box model -->
+                <h2>Box model</h2>
+                <ol>
+                    <li>Content - turinys, centrine dalis</li>
+                    <li>Padding - tarpas tarp turinio ir remelio</li>
+                    <li>Border - remelis</li>
+                    <li>Margin - paraste esanti tarp remelio ir kitu aplinkiniu elementu</li>
+                    <li>Position - modifikuota pozicija neitaklojant kitu elementu pozicijos</li>
+                </ol>
+
+                <div class="boxModelPvz">Box model pavyzdys</div>
+                <div><!-- content -->
+                    <h3>Content</h3>
+                    <p>Turinio dali itakoja turinio kiekis ir jo nustatymai, width, height, font-size</p>
+                </div>
+
+                <div><!-- padding -->
+                <h3>Padding</h3>
+                    <p>Tarpas tarp turinio ir remelio<br>Gali buti nustatomas </p>
+                    <ul>
+                        <li>padding-top</li>
+                        <li>padding-right</li>
+                        <li>padding-bottom</li>
+                        <li>padding-left</li>
+                        <li>padding: t r b l - clockwise</li>
+                        <li>padding: all</li>
+                    </ul>
+                </div>
+
+                <div><!-- border -->
+                <h3>Border</h3>
+                <p>Juosta atskirianti elemento padding nuo margin</p>
+                <p>Uz borderio baigiasi background dalis</p>
+                <p>Galima suteikti spalvos, storio, linijos tipo, kapmpu apvalinimo stilius
+                skirtingus stilius galima suteikti skirtingoms krastinems
+                </p>
+                <ul>
+                    <li>border: width style color;</li>
+                    <li>border-width: px;</li>
+                    <li>border-style: solid/dashed/dotted/double;</li>
+                    <li>border-color: red;</li>
+                    <li>border-[krastine]-[color,style,width]: ;</li>
+                    <li>border-radius: 5px;</li>
+                    <li>border-radius: 30px 5px 20px;</li>
+                </ul>
+                </div>
+
+                <div><!-- margin -->
+                <h3>Margin</h3>
+                <ul>
+                    <li>margin-top</li>
+                    <li>margin-right</li>
+                    <li>margin-bottom</li>
+                    <li>margin-left</li>
+                    <li>margin: t r b l - clockwise</li>
+                    <li>margin: all</li>
+                    <li>margin: 0 auto;</li>
+                </ul>
+                <p>Tarpas tar elemento remelio ir aplinkiniu elementu<br>
+                Marginai gali persidengti jeigu vienas po kitu einantys elementai yra blokiniai </p>
+                <p>Margin: 0 auto; naudojant su width atributu iscentruoja blokini elementa is krastu</p>
+                <p>Margin is virsaus ir apacios neveikia inline elementams</p>    
+            </div>
+            <div>
+                <h3>Box Sizing</h3>
+                <p>box-sizing: border-box; sudtalpina padding margin i content</p>
+            </div>
+            </section>
+            <section><!-- positions -->
+                <h2>Positions</h2>
+                <ul>
+                    <li>Static - default</li>
+                    <li>relative</li>
+                    <li>absolute</li>
+                    <li>fixed</li>
+                    <li>sticky</li>
+                    <li>top right bottom left z-index</li>
+                </ul>
+                <p>
+                Suteikus elementui betkuria pozicija (apart static), igauna galimybe naudotis top bottom left right z-index<br>
+                z-index nustato eiles sluoksni ekrane.
+                </p>
+
+                <div><!-- static -->
+                    <h3>Static</h3>
+                    <p>
+                        Nesuteikia jokiu savybiu.
+                    </p>
+                    <div class="posContainer">
+                        <div class="static">Static 1</div>
+                        <div class="static">Static 2</div>
+                        <div class="static right">Static 3</div>
+                        <div class="static left">Static 4</div>
+                    </div>
+                </div>
+
+                <div><!-- relative -->
+                    <h3>Relative</h3>
+                    <p>
+                        Relative suteikia galimybe naudoti top right bottom left ir z-index.<br>
+                        Top left bottom right pastumia elementa nuo jo pradiniu koordinaciu.<br>
+                        Elemento viduje esant absoliuciam elementui, jo atitraukimai skaiciuojami nuo artimiausia protevinio elemento turincio relatyviaja pozicija.
+                    </p>
+                    <div class="posContainer">
+                        <div class="box static">Static 1</div>
+                        <div class="box static">Static 2</div>
+                        <div class="box relative">Relative 1</div>
+                        <div class="box relative top right">Relative 2</div>
+                    </div>
+                </div>
+
+                <div><!-- Absolute -->
+                    <h3>Absolute</h3>
+                    <p>
+                        Absolute suteikia galimybe naudoti top right bottom left ir z-index.<br>
+                        Top left bottom right pastumia elementa nuo jo artimiausio protevinio elemento ribu<br>
+                        Absolute elementas iseina is puslapio tekmes.
+                    </p>
+                    <div class="posContainer relative">
+                        <div class="box static">Static 1</div>
+                        <div class="box static">Static 2</div>
+                        <div class="box absolute top">Absolute 1</div>
+                        <div class="box static">Static 4</div>
+                    </div>
+                </div>
+
+                <div><!-- Fixed -->
+                    <h3>Fixed</h3>
+                    <p>
+                        Fixed suteikia galimybe naudoti top right bottom left ir z-index.<br>
+                        Iseina is puslapio tekmes, relative neitakoja, prilimpa prie viewport.<br>
+                        Top right bottom left nurodo nuo kurio krasto bus atitraukta.
+                    </p>
+                    <div class="posContainer">
+                        <div class="box static">Static 1</div>
+                        <div class="box static">Static 2</div>
+                        <div class="box fixed bottom">Fixed</div>
+                        <div class="box static">Static 4</div>
+                    </div>
+                </div>
+
+                <div><!-- Sticky -->
+                    <h3>Sticky</h3>
+                    <p>
+                        Sticky suteikia galimybe naudoti top right bottom left ir z-index.<br>
+                        Iseina is puslapio tekmes, relative neitakoja, prilimpa prie viewport.<br>
+                        Top right bottom left nurodo kokiu atstumu prilipti prilipti nuo viewport ribos. <br>
+                        Prilimpa prie savo tevinio konteinerio
+                    </p>
+                    <div class="posContainer">
+                        <div class="box static">Static 1</div>
+                        <div class="box static">Static 2</div>
+                        <div class="box sticky top">Sticky</div>
+                        <div class="box static">Static 4</div>
+                    </div>
+                </div>
+                
+            </section>
+            <section><!-- selectors -->
+                <h2>Selectoriai</h2>
+                <ul>
+                    <li>selector1, selector2, ...- keletos selektoriu parinkimas</li>
+                    <li>
+                        <ul>
+                            <li>tagName.class</li>
+                            <li>tagName.class.class</li>
+                            <li>tagName.class#id</li>
+                            <li>tagName#id</li>
+                            <li>.class.class</li>
+                            <li>#id.class</li>
+                        </ul>
+                    </li>
+                    <li>selector1 selector2 - selector1 viduje nesvarbu kaip giliai esantis selector2</li>
+                    <li>selector1 > selector2 .... - selector1 viduje is karto einantis vaikinis selector2</li>
+                    <li>selector1 + selector2 - is karto einantis selector2</li>
+                    <li>selector1 ~ selector2 - uz selector 1 einantys (daugiskaita) selector2</li>
+                </ul>
+                <div><!-- testas  -->
+                    <h5 class="text">Testas 1</h5>
+                    <h5>Testas 2</h5>
+                    <h4 class="text">Testas 3</h4>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

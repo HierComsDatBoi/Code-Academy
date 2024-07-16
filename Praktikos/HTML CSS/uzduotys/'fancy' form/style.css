@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+}
+.form{
+    background-color: #006e5c;
+    width: 350px;
+}
+h4{
+    font-size: 15px;
+}
+
+label{
+    font-size: 14px;
+    color: white;
+}
+
+input{
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+
+input#unique{
+    background-color: gray;
+}
+
+input#age{
+    width: 30px;
+}
+
+input#terms{
+    width: 15px;
+}
+
+::placeholder{
+    color: black;
+}
+
+#email,
+#password,
+#age,
+#about{
+    border: 2px solid red;
+}
+
+:checked{
+    background-color: blue;
+}

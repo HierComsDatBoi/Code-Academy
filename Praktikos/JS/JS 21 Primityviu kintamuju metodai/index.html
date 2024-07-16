@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <section>
+    <h1>Metodai</h1>
+    <p>
+        Metodas - egzistuojanti funkcija kuri priklauso kazkokiam specifiniam elementui ar kintamajam.
+        savybe/property - nekintanti reiksme
+    </p>
+    <p>
+        Metodai gali buti prototipinai (instance) arba statiniai (static).<br>
+        Prototipinio metodo atveju kreipiames i metoda ar savybe per kintamaji.<br>
+        Statinio metodo atveju kreipiames i metoda ar savybe per globaluji kintamaji.
+    </p>
+    <p>
+        tipas.prototype.metodas/savybe - kintamasis.metodas()/savybe<br>
+        Tipas.metodas/savybe - Tipas.metodas()/savybe
+    </p>
+    <h2>Savybes</h2>
+    <ul>
+        <li>.Number.EPSILON - grazina epsilon</li>
+        <li>.Number.MAX_SAFE_INTEGER</li>
+        <li>.Number.MAX_VALUE</li>
+        <li>.Number.positive_infinite</li>
+        <li>.Number.min_safe_integer</li>
+        <li>.Number.max_value</li>
+        <li>.Number.negative_infinite</li>
+        <li>.Number.NaN</li>
+    </ul>
+    <h2>statiniai metodai</h2>
+    <ul>
+        <li>.isFinite(sk) - ar skaicius begalinis</li>
+        <li>.isInteger(sk) - ar skaicius sveikasis</li>
+        <li>.isSafeInteger(sk)</li>
+        <li>.isNaN(kazkas)</li>
+        <li>.parseInt(kazkas) - pavercia skaiciu arba stringa i sveikaji skaiciu</li>
+        <li>.parseFloat(kazkas) - pavercia skaiciu arba stringa i realuji skaiciu</li>
+        <li>.parseFloat(kazkas)</li>
+    </ul>
+    <h2>instance prototipiniai metodai</h2>
+    <ul>
+        <li>.prototype.toPrecision(sk)</li>
+        <li>.prototype.toFixed(sk) - sk kiek skaiciu uz kablelio suapvalintai palieka - grazina string</li>
+        <li>Number.parseFloat(sk.toFixed(4)) pavercia string i number</li>
+        <li>+sk.toFixed(4) pavercia string i number</li>
+    </ul>
+</section>
+<section>
+    <h1>String metodai</h1>
+    <ul>
+        <li>.length - grazina stringo simboliu kieki</li>
+    </ul>
+    <ul>
+        <li>.prototype.at(nr) - nurodo string'o nr pozicijoje esantį simbolį (galima skaičiuoti nuo galo)</li>
+        <li>.prototype.charAt(nr) - nurodo string'o nr pozicijoje esantį simbolį</li>
+        <li>.prototype.charCodeAt(nr) - grąžina nurodytos raidės UTF-16 bibliotekoje kodą</li>
+        <li>.prototype.concat(string1, string2, string3...) - apjungia du arba daugiau string'us į vieną</li>
+        <li>.prototype.startsWith(text) - ar string prasideda su text</li>
+        <li>.prototype.endsWith(text) - ar string pasibaigia su text</li>
+        <li>.prototype.includes(text) - ar string'e yra text'as</li>
+        <li>.prototype.indexOf(text) - grąžina indeksą pirmojo rasto nurodyto text'o</li>
+        <li>.prototype.lastIndexOf(text) - grąžina indeksą paskutinio rasto nurodyto text'o</li>
+        <li>.prototype.localeCompare(text) - palygina string'ą su text'u</li>
+        <li>.prototype.match(regex) - ar atitinka bent vieną regex</li>
+        <li>.prototype.matchAll(regex) - ar atitinka visus regex</li>
+        <li>.prototype.padStart(ilgis, text) - prideda text pradžioje kol pasiekiamas ilgis</li>
+        <li>.prototype.padEnd(ilgis, text) - prideda text gale kol pasiekiamas ilgis</li>
+        <li>.prototype.repeat(kiek) - kiek kartų atkartoti string'ą</li>
+        <li>.prototype.replace('ka', 'kuom') - pakeičia pirmąjį rastą 'ka" į 'kuom'</li>
+        <li>.prototype.replaceAll('ka', 'kuom') - pakeičia visus rastus 'ka" į 'kuom'</li>
+        <li>.prototype.search(regex)</li>
+        <li>.prototype.slice(nuo, iki) - atkerpa iš string dalį nuo(imtinai) iki iki(neimtinai)</li>
+        <li>.prototype.substring(nuo, iki) - atkerpa iš string dalį nuo(imtinai) iki iki(neimtinai)</li>
+        <li>.prototype.split(skirtukas) - sukarpo string'ą į gabaliukus (pagal skirtukas) ir grąžina masyvą</li>
+        <li>.prototype.toLowerCase() - paverčia visą string į mažąsias raides</li>
+        <li>.prototype.toUpperCase() - paverčia visą string į didžiąsias raides</li>
+        <li>.prototype.trimStart() - panaikina tarpus stringo pradžioje</li>
+        <li>.prototype.trimEnd() - panaikina tarpus string'o pabaigoje</li>
+        <li>.prototype.trim() - panaikina tarpus ir pradžioje ir pabaigoje</li>
+    </ul>
+</section>
+</body>
+</html>

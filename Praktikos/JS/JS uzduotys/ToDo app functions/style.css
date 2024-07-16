@@ -1,0 +1,39 @@
+header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    >h1 {
+        margin: 0;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: lightgray;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+
+    >div{
+        border-radius: 5px;
+        width: 500px;
+        background-color: white;
+        padding: 10px;
+    }
+}
+
+.task{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr 1fr;
+    background-color: white;
+    margin: 5px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trecia pamoka</title>
+</head>
+
+    <body>
+        <header>
+            <a href="https://google.com"><img src="https://cdn0.iconfinder.com/data/icons/social-network-9/50/22-512.png" alt="logo" class="logotipas" target="_blank"></a>
+            <nav>
+                <a href="#semantika">Semantika</a>
+                <a href="#reset">Reset, Normalise</a>
+                <a href="#parentchild">Teviniai</a>
+                <a href="#styles">Styles</a>
+                <a href="#fonts">Fonts</a>
+                <a href="#icons">Icons</a>
+            </nav>
+            <!-- Login, Sign Up, Search -->
+        </header>
+        <main>
+            <article id="semantika"> <!-- puslapio semantika-->
+                <h2>Semantika</h2>
+                <p>
+                    Semantika reikalinga puslapio tvarkai palaikyti, lengvai naviguotis (programuotojui), geram SEO.
+                </p>
+                <ul>
+                    <li>Header</li>
+                    <ul>
+                        <li>Virsutine dalis</li>
+                        <li>Search</li>
+                        <li>Navigacija, menu</li>
+                        <li>Logo</li>
+                        <li>Account</li>
+                        <li>Kalba</li>
+                    </ul>
+                    <li>Aside - papildoma info</li>
+                    <li>Main - pagrindinis puslapio contentas</li>
+                    <ul>
+                        <li>Article</li>
+                        <li>Section</li>
+                    </ul>
+                    <li>Footer - apatine dalis, accessibility options, info, reikalingi linkai</li>
+                </ul>
+            </article>
+            <section id="reset"><!-- reset normal -->
+                <h2>Reset, Normalise</h2>
+                <p><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset CSS</a> - panaikina tagu stilius tarp narsykliu</p>
+                <p><a href="https://github.com/necolas/normalize.css/blob/master/normalize.css" target="_blank">Normalize CSS</a> - Suvienodina tagu stilius tarp narsykliu, panaikina nenaudingus stilius, prideda reikalingus stilius</p>
+            </section>
+            <section id="parentchild"><!-- Teviniai ir vaikiniai elementai -->
+                <h2>Teviniai vaikiniai</h2>
+                <p>
+                Elementas gali tureti viena arba daug vaikiniu elementu <br>
+                Elementas turi tik viena tevini elementa
+                </p>
+
+                <h2>Paveldimumas</h2>
+                <p >
+                Stiliai gali buti paveldimi is tevinio elemento i vaikini elementa
+                </p>
+            </section>
+            <section id="styles"><!-- stiliu prioritetai -->
+                <h2>Stiliu prioritetai</h2>
+                <ol>
+                    <li>!important</li>
+                    <li>Inline Style</li>
+                    <li>Specifikacija (selector specificity)
+                        <ol>
+                        <li>ID (1, 0, 0)</li>
+                        <li>Class (0, 1, 0)</li>
+                        <li>Element (0, 0, 1)</li>
+                    </ol></li>
+                    <li>Eiliskumas - toliau faile aprasytas</li>
+                    <li>User agent stylesheet - svetaines numatytieji stiliai</li>
+                    <li>Inheritance - Paveldimumas</li>
+                </ol>
+                <p class="remeliai0" id="remeliai1" style="text-transform: capitalize;">Prioritetu pavyzdys</p>
+                <p>esant dviem selektoriam, kurie selectina ta pati elementa su vienoda specifikacija, tuomet bus taikomas tas stilius kuris yra aprasytas veliau</p>
+                <p class="bigText">Jeigu imanoma nenaudoti!!!
+                    <span>!important prieraso, jis ignoruoja visus prioritetus.
+                        !important prierasa gali perrasyti tik kitas !important
+                    </span>
+                </p>
+            </section>
+            <section id="fonts"><!-- Fonts -->
+                <h2>Fonts</h2>
+                <a href="https://fonts.google.com/" target="_blank">Fontai</a>
+            </section>
+            <section id="icons"><!-- Icons -->
+                <h2>Icons</h2>
+                <p>W3schools icons apacioj yra linkas</p>
+            </section>
+        </main>
+        <footer>
+            <p>Copyrights</p>
+            <p>Piracy policy</p>
+            <p>Terms</p>
+            <p>Contact</p>
+        </footer>
+    </body>
+</html>

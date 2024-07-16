@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section> <!-- forms -->
+        <h2>Forms</h2>
+        <div>
+            <h3>Tagai</h3>
+            <ul>
+                <li>form</li>
+                <li>label</li>
+                <li>input</li>
+                <li>textarea</li>
+                <li>select - opciju pasirinkimo laukas (nedideliam kiekiui opciju)</li>
+                <li>datalist - opciju pasirinkimo laukas (dideliam kiekiui opciju)</li>
+                <li>option - select arba datalist viduje</li>
+                <li>output - formos atsakymui atvaizduoti</li>
+                <li>custom</li>
+            </ul>
+        </div>
+
+        <form>
+            <div>
+                <label for="vardas">Vardas: </label>
+                <input type="text" name="" id="vardas">
+            </div>
+            <div>
+                <label for="email">email: </label>
+                <input type="email" name="" id="email">
+            </div>
+            <div>
+                <label for="aprasymas">Aprasymas: </label>
+                <textarea name="" id="aprasymas"></textarea>
+            </div>
+            <div>
+                <label for="kalba">Programavimo kalba</label>
+                <select name="" id="kalba">
+                    <option value="javascript">JavaScript</option>
+                    <option value="java" checked>Java</option>
+                    <option value="python">Python</option>
+                    <option value="c#">C#</option>
+                    <option value="c++">C++</option>
+                    <option value="php">PHP</option>
+                </select>
+            </div>
+            <div>
+                <label for="idMiestas">Miestas</label>
+                <input list="miestas" name="" id="idMiestas">
+                <datalist id="miestas">
+                    <option value="Kaunas">Kaunas</option>
+                    <option value="vilnius">Vilnius</option>
+                    <option value="Klaipeda">Klaipeda</option>
+                    <option value="panevezys">Panevezys</option>
+                    <option value="Siauliai">Siauliai</option>
+                    <option value="alytus">Alytus</option>
+                </datalist>
+            </div>
+            <div><!-- radio -->
+                <h3>Pasirinkite lyti</h3>
+                <input type="radio" name="lytis" id="vyras" required>
+                <label for="vyras">Vyras</label>
+                <input type="radio" name="lytis" id="moteris" required>
+                <label for="moteris">Moteris</label>
+                <input type="radio" name="lytis" id="nenurodyti" required>
+                <label for="nenurodyti">Nesakysiu</label>
+            </div>
+            <input type="submit" name="" id="">
+
+            <div><!-- checkbox -->
+                <h3>Pasirinkite papildomus kebabo ingridientus:</h3>
+                <input type="checkbox" name="ingrid" id="suris" value="Suris">
+                <label for="suris">Suris</label>
+                <input type="checkbox" name="ingrid" id="mesa" value="Mesa">
+                <label for="mesa">Mesa</label>
+                <input type="checkbox" name="ingrid" id="cipsu" value="Cipsu">
+                <label for="cipsu">Cipsu</label>
+                <input type="checkbox" name="ingrid" id="agurku" value="Agurku">
+                <label for="agurku">Agurku</label>
+            </div>
+        </form>
+
+        <div>
+            <h3>Atributai</h3>
+            <ul>
+                <li>
+                    <ul>
+                        <li>text</li>
+                        <li>password</li>
+                        <li>number</li>
+                        <li>radio</li>
+                        <li>checkbox</li>
+                        <li>email</li>
+                        <li>url</li>
+                        <li>file</li>
+                        <li>tel</li>
+                        <li>submit</li>
+                        <li>range - skaiciaus pasirinkimas slenkancioj juostoj</li>
+                        <li>date</li>
+                        <li>datetime-local</li>
+                        <li>button</li>
+                        <li>hidden</li>
+                        <li>reset</li>
+                        <li>search</li>
+                    </ul>
+                </li>
+                <li>for - kuriam inputui</li>
+                <li>name</li>
+                <li>value</li>
+                <li>id - for'ui</li>
+                <li>required</li>
+                <li>min</li>
+                <li>max</li>
+                <li>step - </li>
+                <li>accept - failo tipui</li>
+                <li>pattern</li>
+                <li>checked</li>
+                <li>rows - textarea</li>
+                <li>cols - textarea</li>
+                <li>selected</li>
+                <li>disabled</li>
+                <li>readonly</li>
+            </ul>
+        </div>
+    </section>
+
+    <section><!-- pseudo class -->
+        <h2>pseudo class</h2>
+        <ul>
+            <li>:checked - parinks tik pazymetus (checkbox ir radio)</li>
+            <li>:default</li>
+            <li>:disabled - turintis disabled</li>
+            <li>:enabled - neturintis disabled</li>
+            <li>:focus - fokusuota ivestis</li>
+            <li>:in-range - ivestis ribose</li>
+            <li>:out-of-range - ivestis uz ribu</li>
+            <li>:indeterminate - neapibrezta reiksme</li>
+            <li>:valid - email teisinga ivestis</li>
+            <li>:invalid - email neteisinga ivestis</li>
+            <li>:optional - neturintis required</li>
+            <li>:required - turintis required</li>
+            <li>:readonly - su readonly</li>
+            <li>:read-write - be readonly</li>
+        </ul>
+    </section>
+
+    <section><!-- pseudo elements -->
+        <h2>pseudo elements</h2>
+            <ul>
+                <li>::placeholder - parenka placeholder</li>
+                <li>::before - parenka turini pries</li>
+                <li>::after - parenka turinu uz</li>
+                <li>::marker - parenka saraso elemento zyme</li>
+                <li>::selection - pazymetas turinys</li>
+                <li>::first-letter</li>
+                <li>::first-line</li>
+                <li>::-webkit-scrollbar ,track, thumb - parenka side scrolleri</li>
+                <li>...</li>
+            </ul>
+
+    </section>
+</body>
+</html>

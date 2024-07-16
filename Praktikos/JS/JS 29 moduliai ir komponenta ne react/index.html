@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" type="module"></script>
+</head>
+<body>
+    <section>
+        <h2>komponentai</h2>
+        <p>Komponentas - tai HTML objektas sukurtas JS</p>
+        <p>Komponentai dazniausiai kuriame frameworku, kaip react/vue/angular/swift pagalba, bet galima sukurti ir JS kaip atskiras klases ar funkcijas</p>
+        <div id="komponentuPvz"></div>
+    </section>
+    <section>
+        <h2>Moduliai</h2>
+        <p>moduliai - skirtingi/atskiri failai su savo kakokiu kodu kurie gali buti panaudojami kitu failu.</p>
+        <ul>
+            <li>moduliuose gali buti ivairus kodas. Kintamieji, funkcijos, klases....</li>
+            <li>klases turi buti atskiri failai. Viena klase - vienas failas</li>
+            <li>HTML prijungtas JS kuris kazka importuoja turi tureti atributa type="module" ir jam tada nereikia defer</li>
+            <li>HTML failas prie kurio yra prijungtas modulis privalo buti paleistas kaip serveris, kitu atveju modulis nebus prijungtas</li>
+        </ul>
+        <h3>export ir import</h3>
+        <p>Failuosde esantis kodas gali buti iskeliamas ir galima kazkoki koda is kito failo isikelti</p>
+        <h4>export</h4>
+        <ul>
+            <li>toje pacioje eiluteje (negalima export default ()=>{} (su arrow func) )</li>
+            <li>kodo apacioje isvardinti visus export arba viena export default atskirose eilutese.</li>
+        </ul>
+        <h4>import</h4>
+        <ul>
+            <li>import defaultRandomName</li>
+            <li>import {simple, simple as different}</li>
+            <li>import defaultRandomName, {simple, simple as different}</li>
+        </ul>
+    </section>
+    <section id="cards">
+
+    </section>
+</body>
+</html>

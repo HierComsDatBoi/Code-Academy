@@ -1,0 +1,370 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+
+:root{
+    --pink-text: #FF3998;
+    --dark-2-text: #555555;
+    --light-2: #EEEEEE;
+;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    overflow: auto;
+}
+
+h1{font-size: 3rem;}
+h2{font-size: 2.5rem;}
+p{font-size: 1.25rem;}
+h3{font-size: 1rem; color:var(--pink-text)}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > div > h2{
+        font-family: "Varela Round", sans-serif;
+        padding-left: 10px;
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.divider{
+    width: 100%;
+    border: 2px solid var(--light-2);
+}
+#footerUpsell{
+    width: 70%;
+    margin: 5vh 20px;
+}
+#hero{
+    width: 70%;
+    margin: 15vh 20px;
+
+    .pinkGuy{
+        position: absolute;
+        z-index: -1;
+        top: 150px;
+        left: 60%;
+        > img{
+            height: 40vh;
+        }
+    }
+}
+
+.mainText{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 80%;
+
+    h3{
+        margin: 0;
+    }
+
+    > p{
+        color: var(--dark-2-text);
+        margin: 0;
+    }
+
+    > button{
+        margin-top: 50px;;
+        width: 150px;
+        padding: 10px 30px;
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #ff3939, #ff8139, #ff9239c2) border-box;
+        border-radius: 50em;
+        border: 3px solid transparent;
+    }
+}
+
+#upsell{
+    background-image: linear-gradient(to right top, 
+    #ff4183, #ff4e6f, #ff5d5d,
+    #ff6c4d, #fd803b, #fd803b, 
+    #f5932a, #eaa71c, #d1c121,
+    #d1c121, #d1c121, #d1c121);
+
+    height: 300px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    
+    > .upsellText{
+        padding: 0 20px;
+    }
+}
+
+#press{
+    padding: 30px 20px 0;
+    .pressContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+
+        > div{
+            display: flex;
+            align-items: center;
+
+            > p{
+                padding-left: 20px;
+                color: var(--dark-2-text);
+            }
+        }
+    }
+}
+
+#showcase{
+    margin: 0 20px;
+    .cardContainer{
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 290px);
+        gap: 40px;
+    
+        .card{
+            background-color: #EEEEEE;
+            border-radius: 16px;
+        }
+    
+        img{
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            width: 290px;
+            height: 280px;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+    
+        .cardInfo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 120px;
+        place-items: center;
+        
+            li{
+                padding: 5px;
+            }
+    
+            .cardPrice{
+                text-align: right;
+                ul{
+                    :nth-child(1){
+                        color: #777777;
+                        font-size: 12px;
+                    }
+                    :nth-child(2){
+                        font-size: 20px;
+                    }
+                    :nth-child(3){
+                        color: #777777;
+                        font-size: 18px;
+                    }
+                }
+            }
+    
+            .cardName{
+                ul{
+                    :nth-child(1){
+                        color: #FF8139;
+                        font-size: 12px;
+                    }
+                    :nth-child(2){
+                        font-size: 20px;
+                    }
+                    :nth-child(3){
+                        color: #777777;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    
+        ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+    }
+    a{
+        color:var(--dark-2-text)
+    }
+    
+}
+
+footer{
+    padding: 0 20px;
+    background-color: #fff;
+    z-index: 1;
+    > p{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+#footerUpsell{
+    > .woman{
+        position: absolute;
+        display: inline;
+        left: 60%;
+        z-index: -1;
+        > img{
+            width: 190px;
+        }
+    }
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 20px 0;
+    gap: 20px;
+    h4{
+        margin: 15px 0;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        > li{
+            list-style: none;
+        }
+    }
+
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA  ?!????????????!!!!!!!!!!!!!?*/
+@media (min-width: 768px ){
+
+    header{
+        nav{ display: block;}
+        nav a{
+            color: var(--dark-2-text);
+            text-decoration: none;
+            padding-right: 20px;
+        }
+        nav a:last-child{
+            color: var(--pink-text);
+        }
+    }
+
+    .logo{
+        margin: 0 10%;
+    }
+
+    #hero{
+        margin: 10%;
+        padding: 0;
+    
+        .pinkGuy{
+            position: absolute;
+            z-index: -1;
+            top: 150px;
+            left: 60%;
+            > img{
+                height: 40vh;
+            }
+        }
+    }
+    .mainText{
+        width: 50%;
+    }
+
+    #upsell{
+        background-image: linear-gradient(to right top, 
+        #ff4183, #ff4e6f, #ff5d5d,
+        #ff6c4d, #fd803b, #fd803b, 
+        #f5932a, #eaa71c, #d1c121,
+        #d1c121, #d1c121, #d1c121);
+
+        margin: 0 10%;
+
+        border-radius: 16px;
+        height: 300px;
+        
+        > .upsellText{
+            padding: 30px;
+        }
+    }
+
+    #press{
+        margin: 0;
+        padding: 0;
+        .pressContainer{
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            margin: 50px 10%;
+            }
+    }
+
+    #showcase{
+        margin: 40px 10%;
+        .cardContainer{
+            margin: auto 0;
+        }
+    }
+
+    #footerUpsell{
+        margin: 10%;
+        padding: 0;
+    }
+    
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 0;
+        padding: 0 10%;
+    }
+
+    .branding{
+        margin: 0;
+        .logo{
+            margin: 30px 0 0;
+            padding: 0;
+            > h2{
+                margin: 0;
+            }
+        }
+        p{
+            color: var(--dark-2-text);
+        }
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: start;
+
+        h4{
+            text-transform: uppercase;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            > li{
+                list-style: none;
+            }
+        }
+    
+    }
+
+    .copy{
+        text-align: center;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>51 paskaita - Enum, Union ir Class</title>
+  <script src="./script/main.js" defer></script>
+  <script src="./script/klases.js" defer></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Enum -->
+      <h2>Enum</h2>
+      <p>
+        Enum - enumerator yra skirtas sukurti pasirinkimo variantų sąrašą. Sąrašas turi pavadinimus ir už kiekvieno pavadinimo slypi arba eilės numerio skaičius (eiliškumas skirstomas automašitkai arba jį galima suskirstyti pačiam) arba kažkoks string'as (reikia priskirti visiems).<br>
+        Jo nauda yra tokia, kad kuriant kintamuosius nebūtų netyčia prikuriama panašių, bet nevienodų variacijų (pvz.: vieną sykį užvadini "mašina", o kitą sykį kalbėdamas apie identišką dalyką užvadini "automobilis").
+      </p>
+    </section>
+    <section> <!-- Union -->
+      <h2>Union</h2>
+      <h3>ARBA - |</h3>
+      <p>
+        Nurodo, kad galima priskirti vieną arba kitą arba trečią... tipą, kitaip pasakius vieną iš išvadintų tipų.
+      </p>
+      <h3>IR - &</h3>
+      <p>
+        Nurodo, kad reikia priskirti IR vieną IR kitą IR trečią... tipus, kitaip pasakius visus išvardintus.
+      </p>
+    </section>
+    <section> <!-- TS Class -->
+      <h2>Class</h2>
+      <p>
+        Klasės TS'e aprašomos šiek tiek kitaip negu JS'e.<br>
+        TS'e, prieš konstruktorių, mes turime susikurti savybes (properties) su tipais ir taip pat galime priskirti joms prieinamumus.
+      </p>
+      <h4>Prieinamumai (prefix modifiers)</h4>
+      <ul>
+        <li>public (default) - nieko nekeičia</li>
+        <li>private - pasiekiamas tik klasės viduje. Norint pasiekti už klasės ribų, reikia kurti set/get'erius.</li>
+        <li>readonly - galima tik pasiekti, negalima keisti</li>
+      </ul>
+    </section>
+    <section></section>
+  </main>
+  <footer></footer>
+</body>
+</html>

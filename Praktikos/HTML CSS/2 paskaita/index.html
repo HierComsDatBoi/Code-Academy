@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Antra paskaita</title>
+        <style>
+            .isskirta{
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>CSS ivadas</h1>
+        <p>CSS - Cascading Style Sheets skirtas stilizuoti html elementus</p>
+        <div> <!-- CSS rasymo budai -->
+            <h2>CSS rasymo budai</h2>
+            <ul>
+                <li>Inline - Tago viduje style atributas</li>
+                <li>Internal - HTML faile, style tage</li>
+                <li>External - Atskirame faile</li>
+            </ul>
+    
+            <div> <!-- Inline -->
+                <h3>Inline</h3>
+                <p>Testavimui, greitiems pakeitimams, nepaliekamas galutiniame kode</p>
+                <p style="color:red;">Pavyzdys</p>
+            </div>
+    
+            <div><!-- Internal -->
+                <h3>Internal</h3>
+                <p>Testavimui, veikia tik vienam puslapiui, nenorint kurti css failo, retai paliekamas galutiniame kode</p>
+                <p>Pavyzdys Internal <span class="isskirta">isskirta dalis</span> teksto viduje</p>
+            </div>
+    
+            <div class="ext"><!-- External -->
+                <h3>External</h3>
+                <p>Dazniausiai naudojamas, prijungtas link tago pagalba is atskiro styles.css failo</p>
+            </div>
+        </div>
+        <div class="selektoriai"><!-- CSS selectoriai -->
+            <h2>CSS selectors</h2>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">Developer Mozilla</a>
+            <br>
+            <a href="https://www.w3schools.com/css/css_selectors.asp">W3 School</a>
+            <p>CSS selektoriai naudojami nurodyti kokiems elementams priskirti stilius</p>
+            <ul>
+                <li class="class">class gali buti keli elementai - html klase gali tureti kelias klases atskirtas tarpu - pasirenkama su .</li>
+                <li id="id">id turi buti unikalus - pasirenkama su #</li>
+            </ul>
+        </div>
+        <div> <!-- Spalvos-->
+            <h2>CSS spalvos, oh god the spalvos</h2>
+            <ul>
+                <li>RGB - Red Green Blue (Alpha) rgb(255, 255, 255) rgba(255, 255, 255, 0.001-1)</li>
+                <li>Hex - #RRGGBBAA</li>
+                <li>HSL - Hue Saturation Lightness hsl(255, 100%, 100%)</li>
+                <li>Name - cadetblue</li>
+            </ul>
+        </div>
+        <div> <!-- Fonai -->
+            <h2>Fonai</h2>
+            <div class="fonas spalva"><p>tekstas</p></div>
+            <div class="fonas gradient"><p>tekstas</p></div>
+            <div class="fonas img3"></div>
+            <div class="fonas img2"></div>
+            <div class="fonas img1"></div>
+        </div>
+        <div> <!-- Display -->
+            <h2>Display</h2>
+            <ul>
+                <li>Inline</li>
+                <li>Block</li>
+                <li>Inline-Block</li>
+            </ul>
+            <h3>Inline</h3>
+            <p>uzima tiek vietos kiek reikia turiniui, negalima suteikti aukscio ir plocio parametru</p>
+            <span class="inline">Inline</span>
+            <span class="inline">Inline</span>
+            
+            <h3>Block</h3>
+            <p>Elementai kurie uzima visa eilute nesvarbu kiek vietos uzima turinys</p>
+            <p class="block">Blokinis</p>
+            <p class="block">Blokinis</p>
+
+            <h3>Inline-Block</h3>
+            <p>elementai uzima vietos kiek reikia turiniui, gali atsistoti salia kito, priima plocio ir aukscio parametrus, problemos atsiranda su turiniu</p>
+            <span class="Inline-Block"><p>turinys</p></span>
+            <span class="Inline-Block"></span>
+        </div>
+    </body>
+</html>

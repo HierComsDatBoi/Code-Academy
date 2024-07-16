@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <h1>DOM document object model</h1>
+    <section>
+        <h3>Node</h3>
+        <p>
+            Node - html elementas JS aplinkoje
+        </p>
+        <p>
+            Galima html pildyti naudojant innerHTML - rasant html  koda js kaip string ir juo papildyti html elementa. tuomet tas stringas html bus skaitomas kaip html kodas ir atvaizdojamas kaip html kodas<br>
+            taciau sitas budas turi daug minusu, pradedant nuo saugumo, pabaigiant implementacija.
+        </p>
+        <p>
+            Geresnis budas papildyti html su js - kurti nodus (html elementus) juos prilyginnti kintamiesiems ir tuomet tuos nodus appedinti i kitus html elementus.<br>
+            node yra kuriami, odifikuojami, iterpiami i html naudojant node metodus 
+        </p>
+    </section>
+    <section>
+        <h2>Node metodai</h2>
+        <ul>
+            <li>document.createElement('tagName');</li>
+            <li>document.createTextNode('tekstas') - galima nenaudot</li>
+            <li>kam.append(ka1, ka2, ka3....) - i koki node (kam) gale idesim (ka) nodus ar teksta </li>
+            <li>kam.appendChild(ka) - i kokio node (kam) gala idesime (ka)</li>
+            <li>kam.prepend(ka1, ka2, ka3....) - prideda i pradzia</li>
+            <li>kam.setAttribute('name', 'value')</li>
+            <li>kam.classList
+                <ul>
+                    <li>add(class1, class2, class3....)</li>
+                    <li>remove(class1, class2, class3....)</li>
+                    <li>replace(classNuemi, classPridedi)</li>
+                    <li>toggle(class) - jei klase yra ja isima, jei nera ja ideda</li>
+                </ul>
+            </li>
+            <li>daug daugiau</li>
+        </ul>
+    </section>
+    <section id="test0"></section>
+
+    <section id="card">
+        <div class="cardLandscape">
+            <h3>Pavadinimas</h3>
+                <div class="waddles">
+                <img src="https://mystickermania.com/cdn/stickers/gravity-falls/gf-waddles-jacket-512x512.png" alt="Distinguished gentleman">
+                </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sed natus sapiente itaque. Id, illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ad dolorem laboriosam, deserunt est corrupti voluptas aspernatur reprehenderit voluptate possimus.</p>
+        </div>
+    </section>
+    <section id="generateList"></section>
+
+
+
+    <section id="cardGenerated">
+<!--         <div class="cardGeneratedContent">
+            <h3>Mortal Engines</h3>
+            <div>
+                <img src="https://m.media-amazon.com/images/M/MV5BNzY1MDA2OTQ0N15BMl5BanBnXkFtZTgwMTkzNjU2NTM@._V1_.jpg" alt="mortal engines movie poster">
+            </div>
+            <p>In a post-apocalyptic world where cities ride on wheels and consume each other to survive, two people meet in London and try to stop a conspiracy.
+            </p>
+        </div> -->
+    </section>
+    <section id="naujasBody">
+        <h1 id="name">Unknown</h1>
+        <p class="redtext">This text will be in <span>red</span></p>
+        <p class="bluetext">This text will be in <span>red</span></p>
+        <p class="yellowtext">This text will be in <span>yellow</span></p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>50 paskaita - Config ir Tipai</title>
+  <script src="./script/main.js"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section>
+      <h2>TS Config</h2>
+      <p>
+        TypeScript konfigūracijos failas yra skirtas nurodyti kaip .ts tipo failai, turi būti kompiliuojami į .js tipo failus.<br>
+        Config failo nustatymų yra labai daug, čia aptarsime keletą jų:
+      </p>
+      <ul>
+        <li>target - į kurią JS versiją kodą versti</li>
+        <li>rootDir - kuriame aplankale yra .ts failai, kuriuos reikia konvertuoti į .js failus</li>
+        <li>outDir - kuriame aplankale sudėti į .js kovertuotus .ts failus</li>
+        <li>noImplicitAny - neleidžia naudoti "any" tipo</li>
+        <li>noUnusedLocals - draustų nepanaudotus kintamuosius</li>
+        <li>noUnusedParameters - draustų nepanaudotus parametrus</li>
+        <li>noImplicitReturns - aprašyti funkcijos grąžinimą</li>
+        <li>removeComments - sukompiliuoja be komentarų</li>
+        <li>skipLibCheck - ar praleisti tipų tikrinimą naudojant bibliotekas</li>
+        <li>exactOptionalPropertyTypes - visos objekto savybės privalo būti aprašyti</li>
+        <li>forceConsistentCasingInFileNames - versti failus vadinti pagal vienodą struktūrą</li>
+        <li>strict - ar kodas privalo būti griežtos/tvarkingos sintaksės</li>
+        <li>alwaysStrict - sukompiliuoti .js failai turėtų "use strict"</li>
+        <li>noImplicitThis - "this" privalo turėti tipą</li>
+        <li>noFallthroughCasesInSwitch - switch cases turi turėti break'us</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Masyvų tipai</h2>
+      <h3>Tuples</h3>
+      <p>
+        Tuple yra nurodyto ilgio masyvas, kurio reikšmių tipas ir eiliškumas svarbus. Kitaip pasakius Tuple yra griežtos struktūros masyvas.
+      </p>
+      <p>
+        ["Rokas", "Banaitis"] - tuple.<br>
+        { vardas: "Rokas", pavarde: "Banaitis" } - object.<br>
+        Tuple yra mažiau vietos užimantis, greičiau kodo nuskaitomas, bet mažiau programuotojui aiškus duomuo. Dėl to JS'e gan retai pasitaikantis.
+      </p>
+      <h3>Array</h3>
+      <p>
+        Kuriant masyvo tipą, reikia nusirodyti masyvo viduje esančius tipus ir masyvo gylį
+      </p>
+    </section>
+    <section>
+      <h2>Objektų tipai</h2>
+      <h3>Object</h3>
+      <p>
+        Galime objektą aprašyti paprastai, kaip kad tai darytume JS'e, bet negalime patys nurodyti tipų. Tipai ir automatiškai priskiriami kai nurodome reikšmes.<br>
+        Dėl to yra naudojami type arba interface norint aprašyti objektus.
+      </p>
+      <h3>Type</h3>
+      <p>
+        Naudojamas norint sukurti objektų / masyvų / klasių... struktūras.<br>
+        Norint sukurti tipą, reikia parašyti žodį "type" ir už jo pavadinimą ir struktūrą.<br>
+        Savo sukurto tipo priskyrimas visiškai nesiskiria nuo jau egzistuojančių tipų priskyrimo. 
+      </p>
+      <h3>Interface</h3>
+      <p>
+        Naudojamas norint sukurti objektų arba klasių struktūras.<br>
+        Visą kitą labai panašu/identiška Type'ui.
+      </p>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
