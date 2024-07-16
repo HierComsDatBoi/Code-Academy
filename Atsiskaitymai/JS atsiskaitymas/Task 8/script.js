@@ -7,25 +7,23 @@ division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
 class Calculator{
-  constructor(sk1, sk2){
-    this.sk1 = sk1;
-    this.sk2 = sk2;
+  sum(sk1, sk2){
+    return sk1 + sk2;
   }
-  sum(){
-    return this.sk1 + this.sk2;
+  subtraction(sk1, sk2){
+    return sk1 - sk2;
   }
-  subtraction(){
-    return this.sk1 - this.sk2;
+  multiplication(sk1, sk2){
+    return sk1 * sk2;
   }
-  multiplication(){
-    return this.sk1 * this.sk2;
-  }
-  division(){
-    return this.sk1 / this.sk2;
+  division(sk1, sk2){
+    if (sk2 !== 0)
+    return sk1 / sk2;
+  return 'error, nesidalina is 0';
   }
 }
 
-console.log(new Calculator(5, 10).sum());
-console.log(new Calculator(5, 10).subtraction());
-console.log(new Calculator(5, 10).multiplication());
-console.log(new Calculator(5, 10).division());
+console.log(new Calculator().sum(5, 10));
+console.log(new Calculator().subtraction(5, 10));
+console.log(new Calculator().multiplication(5, 10));
+console.log(new Calculator().division(5, 10));

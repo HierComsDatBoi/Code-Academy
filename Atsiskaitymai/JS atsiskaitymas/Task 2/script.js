@@ -6,5 +6,5 @@ pusėje esančiame "state" skaičiavimo bloke (<div id="btn__state">0</div>)
 let count = 0;
 document.querySelector('#btn__element')
 .addEventListener('click', () =>{
-  document.querySelector('#btn__state').textContent = count++;
+  document.querySelector('#btn__state').textContent = ++count;
 });

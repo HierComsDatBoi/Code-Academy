@@ -20,31 +20,38 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
 
-function filterDogOwners(users){
-  const dogOwnerList = [];
-
-  users.forEach(user => {
-    if(user.hasDog == true){
-      dogOwnerList.push(user);
-    }
-  });
-
-  return dogOwnerList;
-}
+//teisingas budas
+const filterDogOwners = users => users.filter(el=> el.hasDog);
 console.log(filterDogOwners(users));
 
-
-
-
-function filterAdults(users){
-  const adultList = [];
-
-  users.forEach(user => {
-    if(user.age > 18){
-      adultList.push(user);
-    }
-  });
-
-  return adultList;
-}
+const filterAdults = users => users.filter(el => el.age >= 18);
 console.log(filterAdults(users));
+
+// function filterDogOwners(users){
+//   const dogOwnerList = [];
+
+//   users.forEach(user => {
+//     if(user.hasDog == true){
+//       dogOwnerList.push(user);
+//     }
+//   });
+
+//   return dogOwnerList;
+// }
+// console.log(filterDogOwners(users));
+
+
+
+
+// function filterAdults(users){
+//   const adultList = [];
+
+//   users.forEach(user => {
+//     if(user.age > 18){
+//       adultList.push(user);
+//     }
+//   });
+
+//   return adultList;
+// }
+// console.log(filterAdults(users));

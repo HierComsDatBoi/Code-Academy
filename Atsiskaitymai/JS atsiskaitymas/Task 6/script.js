@@ -20,18 +20,28 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 
-function getUserAverageAge(users){
-  let sum = 0
-  users.forEach(user =>{
-    sum += user.age;
-  });
-  return sum / users.length;
-}
+//teisingas budas
 
-function getUsersNames(users){
-  let userNames = [];
-  users.forEach(user =>{
-    userNames.push(user.name);
-  });
-  return userNames;
-}
+const getUserAverageAge = arr => (arr.reduce((acc, curr) => acc + curr.age, 0) / arr.length).toFixed(2);
+console.log(getUserAverageAge(users));
+
+const getUsersNames = arr => arr.map(el => el.name);
+console.log(getUsersNames(users));
+
+//bloggai
+
+// function getUserAverageAge(users){
+//   let sum = 0
+//   users.forEach(user =>{
+//     sum += user.age;
+//   });
+//   return sum / users.length;
+// }
+
+// function getUsersNames(users){
+//   let userNames = [];
+//   users.forEach(user =>{
+//     userNames.push(user.name);
+//   });
+//   return userNames;
+// }

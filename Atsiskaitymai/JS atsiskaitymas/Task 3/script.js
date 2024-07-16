@@ -17,22 +17,23 @@ fetch(ENDPOINT)
 
   document.querySelector('#btn')
   .addEventListener('click', e =>{
-
     //pridedu klase, kad paslepti message paragrafa.
     document.querySelector('#message').classList.add('hidden');
 
+    // isvalomas divas, kad neprisikurtu nauju korteliu kiekviena karta
+    const outputDiv = document.querySelector('#output');
+    outputDiv.textContent = '';
 
     //sukuriamos korteles kiekvienam useriui
     data.forEach(user => {
-      outputDiv = document.querySelector('#output');
 
-      cardDiv = document.createElement('div');
+      const cardDiv = document.createElement('div');
 
-      avatar = document.createElement('img');
+      const avatar = document.createElement('img');
       avatar.setAttribute('src', user.avatar_url);
       avatar.setAttribute('alt', `${user.login} avatar`);
 
-      loginName = document.createElement('h3');
+      const loginName = document.createElement('h3');
       loginName.textContent = user.login;
 
       cardDiv.append(avatar, loginName);
