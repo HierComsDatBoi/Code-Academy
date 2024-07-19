@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script/main.js" type="module"></script>
+  <title>Kelion</title>
+</head>
+<body>
+  <header>
+    <a href="#home"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Trivago.svg/2560px-Trivago.svg.png" alt="trivago logo"></a>
+    <nav>
+      <div class="hidden"></div>
+      <button id="loginBtn">Prisijungti</button>
+      <button id="registerBtn">Registruotis</button>
+      <button id="logout" class="hidden">Atsijungti</button>
+    </nav>
+  </header>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span id="closeLogin" class="close">&times;</span>
+      <h2>Prisijunkite</h2>
+    </div>
+    <div class="modal-body">
+      <form action="submit" id="loginForm">
+      <label for="userNameLogin">Vartotojo vardas</label><br>
+      <input type="text" name="userName" id="userNameLogin" required><br>
+      <label for="passwordLogin">Slaptažodis</label><br>
+      <input type="password" name="password" id="passwordLogin" required><br>
+      <input type="submit" name="submit" id="submitLogin">
+      <p id="errorLogin" class="hidden">Nerastas vartotojas</p>
+    </form>
+    </div>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span id="closeRegister" class="close">&times;</span>
+      <h2>Registruotis</h2>
+    </div>
+    <div class="modal-body">
+      <form action="submit" id="registerForm">
+      <label for="userNameRegister">Vartotojo vardas</label><br>
+      <input type="text" name="userName" id="userNameRegister" required><br>
+      <label for="passwordRegister">Slaptažodis</label><br>
+      <input type="password" name="password" id="passwordRegister" required><br>
+      <label for="passwordRegisterRepeat">Pakartokite slaptažodį</label><br>
+      <input type="password" name="password" id="passwordRegisterRepeat" required><br>
+      <input type="submit" name="submit" id="submitRegister">
+      <p id="errorRegister" class=""></p>
+    </form>
+    </div>
+  </div>
+
+</div>
+
+  <section id="hero">
+    <div>
+      <h2>Kelionės</h2>
+      <p>Kelionės yra svarbu, kelionės yra gerai - tai prisijunk ir parašyk.</p>
+      <p>Kur keliauti? Į sarašą. Pirmyn!</p>
+      <p>Keliaukim kartu drauge.</p>
+    </div>
+  </section>
+
+  <section id="formSection" >
+      <h3>
+        Norint matyti formą reikia prisijungti
+      </h3>
+      <form action="submit" id="form" class="hidden">
+        <h3>Kelionės planas</h3>
+        <div>
+          <label for="city">Miestas</label>        
+          <input type="text" name="city" id="city" required>
+        </div>
+
+        <div>
+          <label for="country">Šalis</label>        
+          <input type="text" name="country" id="country" required>
+        </div>
+
+        <div>
+          <label for="date">Kelionės data</label>        
+          <input type="date" name="date" id="date" required>
+        </div>
+
+        <div>
+          <label for="photo">Nuotrauka</label>        
+          <input type="url" name="photo" id="photo">
+        </div>
+
+        <input type="submit" name="submit" id="submit" value="Pridėti">
+      </form>
+  </section>
+
+  <section id="tripList">
+    <h2>Kelionių sarašas</h2>
+    
+    <div id="tripOutput"></div>
+  </section>
+
+  <footer>
+
+  </footer>
+</body>
+</html>

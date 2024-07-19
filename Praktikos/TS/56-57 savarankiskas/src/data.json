@@ -1,0 +1,69 @@
+{
+  "trip": [
+    {
+      "id": "d1e3",
+      "city": "Barcelona",
+      "country": "Spain",
+      "date": "2025-06-15",
+      "photo": "https://static.independent.co.uk/2023/03/10/14/iStock-1320014700.jpg"
+    },
+    {
+      "id": "84ce",
+      "city": "Riga",
+      "country": "Latvia",
+      "date": "2024-07-18",
+      "photo": "https://www.traveller.ee/blog/wp-content/uploads/2016/07/RigaOldTown_Droneview03.jpg"
+    },
+    {
+      "id": "d7a3",
+      "city": "Tallinn",
+      "country": "Estonia",
+      "date": "2024-08-20",
+      "photo": "https://media.chillisauce.com/image/upload/c_fill,q_auto,f_auto,dpr_1/3134216ae2f3e01814ac"
+    },
+    {
+      "id": "2ce7",
+      "city": "Warsaw",
+      "country": "Poland",
+      "date": "2024-07-30",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Aleja_Niepdleglosci_Warsaw_2022_aerial_%28cropped%29.jpg/1280px-Aleja_Niepdleglosci_Warsaw_2022_aerial_%28cropped%29.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userName": "Dainius",
+      "password": "asd"
+    },
+    {
+      "id": "5de1",
+      "userName": "Dainius1",
+      "password": "asd11"
+    },
+    {
+      "id": "8313",
+      "userName": "asd",
+      "password": "asd"
+    },
+    {
+      "id": "945a",
+      "userName": "asd2",
+      "password": "asd2"
+    },
+    {
+      "id": "83a6",
+      "userName": "asd23",
+      "password": "asd23"
+    },
+    {
+      "id": "e672",
+      "userName": "asd234",
+      "password": "asd235"
+    },
+    {
+      "id": "ed6a",
+      "userName": "budulis",
+      "password": "budulis"
+    }
+  ]
+}
