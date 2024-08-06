@@ -9,7 +9,7 @@ Pvz.:
 
 // let word:string = 'Dainius';
 
-function zeroOne(word:string):number[] {
+function zeroOne(word:string):any {
   let array:number[] = [];
   for (let i = 0; i < word.length; i++) {
       if (i == 0 || i % 2 != 1) {
@@ -19,7 +19,8 @@ function zeroOne(word:string):number[] {
           array.push(0);
       }
   }
-  return array;
+
+  return Number(array.join(''));
 };
 
 console.log(zeroOne('Dainius'));

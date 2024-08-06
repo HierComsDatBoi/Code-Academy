@@ -18,7 +18,7 @@ function zeroOne(word) {
             array.push(0);
         }
     }
-    return array;
+    return Number(array.join(''));
 }
 ;
 console.log(zeroOne('Dainius'));

@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": "4a6sd156as2",
+      "name": "Atsiprausti",
+      "completed": true
+    },
+    {
+      "id": "4a6sd156as4",
+      "name": "Pasportuoti",
+      "completed": false
+    },
+    {
+      "id": "b629d00e-1391-4974-9774-affbcccc3193",
+      "name": "Ištrinti vieną iš task'ų",
+      "completed": false
+    },
+    {
+      "id": "9605987f-1d51-438d-b230-e6b11548bd2c",
+      "name": "asd",
+      "completed": false
+    }
+  ]
+}
