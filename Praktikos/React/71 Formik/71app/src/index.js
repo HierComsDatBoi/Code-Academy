@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { ProductsProvider } from './contexts/Products';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ProductsProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </ProductsProvider>
+      <BrowserRouter>
+            <App />
+      </BrowserRouter>
 );
