@@ -1,0 +1,13 @@
+img{
+  float: left;
+  height: 200px;
+}
+p{
+  width: 300px;
+}
+div{
+  display: flex;
+  /* flex-direction: column; */
+  /* width: 1000px; */
+  /* height: 400px; */
+}

@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "6d49",
+      "username": "Dainius",
+      "userEmail": "dainius@gm.mk",
+      "pass": "Ahoj",
+      "passRepeat": "Ahoj"
+    }
+  ],
+  "cards": [
+    {
+      "id": "1",
+      "name": "kapucinas",
+      "price": "2"
+    },
+    {
+      "id": "2",
+      "name": "juoda",
+      "price": "4"
+    },
+    {
+      "id": "3",
+      "name": "latte",
+      "price": "6"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "posts":[
+    {
+      "id": "4sd6f4gd6fs1",
+      "authorName": "nenurodytas",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deleniti blanditiis numquam. Dignissimos, provident ab at et iste odit similique, repudiandae delectus, iure corporis quae! Dolores porro laboriosam consequatur ipsa.",
+      "attachedImage": "https://cdn.britannica.com/01/221301-050-5E5AA1AA/publicity-still-from-Pinocchio-1940.jpg",
+      "dateTime": "2024-08-11T08:23:58.179Z",
+      "commentsIDs": [],
+      "likes": []
+    },{
+      "id": "4sd6f4gasdfd6fs1",
+      "authorName": "nenurodytas",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deleniti blanditiis numquam. Dignissimos, provident ab at et iste odit similique, repudiandae delectus, iure corporis quae! Dolores porro laboriosam consequatur ipsa.",
+      "attachedImage": "https://static.wikia.nocookie.net/disney/images/f/f2/Profile_-_Nemo.jpg",
+      "dateTime": "2024-08-10T06:20:58.179Z",
+      "commentsIDs": [],
+      "likes": []
+    },{
+      "id": "4sd4gasdfds1",
+      "authorName": "nenurodytas",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deleniti blanditiis numquam. Dignissimos, provident ab at et iste odit similique, repudiandae delectus, iure corporis quae! Dolores porro laboriosam consequatur ipsa.",
+      "attachedImage": "https://wfuogb.com/wp-content/uploads/2021/04/download-1.jpg",
+      "dateTime": "2024-08-12T03:12:58.179Z",
+      "commentsIDs": [],
+      "likes": []
+    }
+  ]
+}

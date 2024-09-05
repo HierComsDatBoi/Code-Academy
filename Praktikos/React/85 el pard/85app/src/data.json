@@ -1,0 +1,116 @@
+{
+  "clothes":[
+    {
+      "id": "6s5d4c6dsf",
+      "category": "pants",
+      "color": "black",
+      "size": "L",
+      "amountInStock": 5,
+      "price": 20.5,
+      "image":"https://img01.ztat.net/article/spp-media-p1/7b0a8fa7227c44c295ae0e78a25dbf3f/a4b6b28f8ffc4c1b95c1633d5b0c3b59.jpg"
+    },{
+      "id": "6s5db4f46dsf",
+      "category": "pants",
+      "color": "black",
+      "size": "M",
+      "amountInStock": 3,
+      "price": 20.5,
+      "image":"https://img01.ztat.net/article/spp-media-p1/7b0a8fa7227c44c295ae0e78a25dbf3f/a4b6b28f8ffc4c1b95c1633d5b0c3b59.jpg"
+    },{
+      "id": "6s5d4fg6adsf",
+      "category": "pants",
+      "color": "yellow",
+      "size": "L",
+      "amountInStock": 6,
+      "price": 20.5,
+      "image":"https://img01.ztat.net/article/spp-media-p1/7b0a8fa7227c44c295ae0e78a25dbf3f/a4b6b28f8ffc4c1b95c1633d5b0c3b59.jpg"
+    },{
+      "id": "6s5d4aadfg6dsf",
+      "category": "pants",
+      "color": "red",
+      "size": "S",
+      "amountInStock": 2,
+      "price": 25.5,
+      "image":"https://img01.ztat.net/article/spp-media-p1/7b0a8fa7227c44c295ae0e78a25dbf3f/a4b6b28f8ffc4c1b95c1633d5b0c3b59.jpg"
+    },{
+      "id": "6sd5d4fg6dsfa",
+      "category": "shorts",
+      "color": "blue",
+      "size": "M",
+      "amountInStock": 10,
+      "price": 15,
+      "image":"https://www.shopcoveusa.com/cdn/shop/files/BlackShortsFrontFinal2_1_1024x1024.jpg"
+    },{
+      "id": "6s5da4fg6dsfa",
+      "category": "shorts",
+      "color": "orange",
+      "size": "M",
+      "amountInStock": 15,
+      "price": 17,
+      "image":"https://www.shopcoveusa.com/cdn/shop/files/BlackShortsFrontFinal2_1_1024x1024.jpg"
+    },{
+      "id": "6s5df4fg6dsfa",
+      "category": "shorts",
+      "color": "yellow",
+      "size": "S",
+      "amountInStock": 20,
+      "price": 6,
+      "image":"https://www.shopcoveusa.com/cdn/shop/files/BlackShortsFrontFinal2_1_1024x1024.jpg"
+    },{
+      "id": "6s5d4fbg6dsfa",
+      "category": "shorts",
+      "color": "blue",
+      "size": "M",
+      "amountInStock": 10,
+      "price": 15,
+      "image":"https://www.shopcoveusa.com/cdn/shop/files/BlackShortsFrontFinal2_1_1024x1024.jpg"
+    },{
+      "id": "6s5d4fbg6dsba",
+      "category": "t-shirt",
+      "color": "blue",
+      "size": "M",
+      "amountInStock": 10,
+      "price": 15,
+      "image":"https://www.mrporter.com/variants/images/3633577411310824/in/w2000_q60.jpg"
+    },{
+      "id": "6s5d4afbg6dsba",
+      "category": "t-shirt",
+      "color": "black",
+      "size": "M",
+      "amountInStock": 4,
+      "price": 24.5,
+      "image":"https://www.mrporter.com/variants/images/3633577411310824/in/w2000_q60.jpg"
+    },{
+      "id": "6s5d4fbg6fdsba",
+      "category": "t-shirt",
+      "color": "blue",
+      "size": "L",
+      "amountInStock": 4,
+      "price": 15.6,
+      "image":"https://www.mrporter.com/variants/images/3633577411310824/in/w2000_q60.jpg"
+    },{
+      "id": "6s5d4fb45g6dsba",
+      "category": "t-shirt",
+      "color": "orange",
+      "size": "M",
+      "amountInStock": 10,
+      "price": 32.4,
+      "image":"https://www.mrporter.com/variants/images/3633577411310824/in/w2000_q60.jpg"
+    }
+  ],
+  "forFutureChangeMaybe": [
+    {
+      "id":"df5g46dfs",
+      "priklauso":"6s5d4fb45g6dsba",
+      "color": "orange",
+      "size": "M",
+      "amountInStock": 10
+    },{
+      "id":"df5g4sdfg6dfs",
+      "priklauso":"6s5d4fb45g6dsba",
+      "color": "blue",
+      "size": "L",
+      "amountInStock": 3
+    }
+  ]
+}

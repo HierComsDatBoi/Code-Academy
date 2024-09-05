@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+button{
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  background-color: cornflowerblue;
+  color: aliceblue;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  max-width: 500px;
+  >nav{
+    display: flex;
+    gap: 20px;
+    >a{
+      padding: 15px;
+      text-decoration: none;
+      color: black;
+    }
+    > .active{
+      border-bottom: 3px solid cornflowerblue;
+    }
+  }
+  >div{
+    display: flex;
+    gap: 10px;
+  }
+}

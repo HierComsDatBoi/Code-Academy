@@ -1,0 +1,42 @@
+{
+  "coffee":[
+    {
+      "id":"1",
+      "title": "Capuchino",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/1024px-Cappuccino_at_Sightglass_Coffee.jpg",
+      "description": "Milk froth, milk and arabica coffee",
+      "price": "6"
+    },{
+      "id":"2",
+      "title": "latte",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Caffe_Latte_at_Pulse_Cafe.jpg/1024px-Caffe_Latte_at_Pulse_Cafe.jpg",
+      "description": "Milk froth, milk and arabica coffee",
+      "price": "6"  
+    },{
+      "id": "3",
+      "title": "Americano",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Espresso_Americano.jpeg/1024px-Espresso_Americano.jpeg",
+      "description": "Coffee and water",
+      "price": "5"
+    },{
+      "id": "4",
+      "title": "Espresso",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg/220px-Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg",
+      "description": "Shot of coffee",
+      "price": "3"
+    },{
+      "id": "5",
+      "title": "Macchiato",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Macchiato_%287199366530%29.jpg/1024px-Macchiato_%287199366530%29.jpg",
+      "description": "Espresso with milk",
+      "price": "4"
+    }
+  ],
+  "users":[
+    {
+      "id": "1",
+      "userName": "Dainius",
+      "password": "Dainius"
+    }
+  ]
+}
