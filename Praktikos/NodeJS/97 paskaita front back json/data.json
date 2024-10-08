@@ -1,0 +1,229 @@
+{
+  "cars":[
+    {
+      "id": "1",
+      "mark": "Toyota",
+      "model": "Camry",
+      "mileage": 56000,
+      "price": 24000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "2",
+      "mark": "Honda",
+      "model": "Civic",
+      "mileage": 45000,
+      "price": 22000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Manual"
+    },
+    {
+      "id": "3",
+      "mark": "Tesla",
+      "model": "Model 3",
+      "mileage": 30000,
+      "price": 37000,
+      "fuelType": "Electric",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "4",
+      "mark": "Ford",
+      "model": "F-150",
+      "mileage": 80000,
+      "price": 29000,
+      "fuelType": "Diesel",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "5",
+      "mark": "BMW",
+      "model": "X5",
+      "mileage": 70000,
+      "price": 46000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "6",
+      "mark": "Chevrolet",
+      "model": "Malibu",
+      "mileage": 52000,
+      "price": 18000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Manual"
+    },
+    {
+      "id": "7",
+      "mark": "Audi",
+      "model": "A4",
+      "mileage": 60000,
+      "price": 35000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "8",
+      "mark": "Hyundai",
+      "model": "Tucson",
+      "mileage": 65000,
+      "price": 21000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "9",
+      "mark": "Mercedes-Benz",
+      "model": "C-Class",
+      "mileage": 55000,
+      "price": 40000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "10",
+      "mark": "Kia",
+      "model": "Sorento",
+      "mileage": 73000,
+      "price": 19000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "11",
+      "mark": "Nissan",
+      "model": "Altima",
+      "mileage": 47000,
+      "price": 23000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "12",
+      "mark": "Subaru",
+      "model": "Outback",
+      "mileage": 60000,
+      "price": 27000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "13",
+      "mark": "Jeep",
+      "model": "Wrangler",
+      "mileage": 85000,
+      "price": 32000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Manual"
+    },
+    {
+      "id": "14",
+      "mark": "Volkswagen",
+      "model": "Jetta",
+      "mileage": 54000,
+      "price": 20000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Manual"
+    },
+    {
+      "id": "15",
+      "mark": "Mazda",
+      "model": "CX-5",
+      "mileage": 67000,
+      "price": 25000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "16",
+      "mark": "Volvo",
+      "model": "XC90",
+      "mileage": 63000,
+      "price": 48000,
+      "fuelType": "Hybrid",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "17",
+      "mark": "Lexus",
+      "model": "RX 350",
+      "mileage": 52000,
+      "price": 45000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "18",
+      "mark": "Porsche",
+      "model": "Cayenne",
+      "mileage": 40000,
+      "price": 80000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "19",
+      "mark": "Dodge",
+      "model": "Charger",
+      "mileage": 78000,
+      "price": 35000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "20",
+      "mark": "Land Rover",
+      "model": "Range Rover",
+      "mileage": 90000,
+      "price": 90000,
+      "fuelType": "Diesel",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "21",
+      "mark": "Audi",
+      "model": "Q7",
+      "mileage": 72000,
+      "price": 50000,
+      "fuelType": "Diesel",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "22",
+      "mark": "Toyota",
+      "model": "Corolla",
+      "mileage": 35000,
+      "price": 19000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "23",
+      "mark": "Honda",
+      "model": "Accord",
+      "mileage": 50000,
+      "price": 25000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "24",
+      "mark": "BMW",
+      "model": "3 Series",
+      "mileage": 68000,
+      "price": 41000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    },
+    {
+      "id": "25",
+      "mark": "Hyundai",
+      "model": "Santa Fe",
+      "mileage": 62000,
+      "price": 22000,
+      "fuelType": "Gasoline",
+      "transmissionType": "Automatic"
+    }
+  ]
+}
